@@ -1306,7 +1306,7 @@ movimentacao2 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisplayMode: =If(varProduto.Title = Blank(),DisplayMode.Edit, DisplayMode.Disabled)
+                DisplayMode: =If(varProduto.Título = Blank(),DisplayMode.Edit, DisplayMode.Disabled)
                 Font: =varFonte
                 Height: =70
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
@@ -1858,7 +1858,7 @@ movimentacao2 As screen:
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Title
+                                "Estoque em falta de " & varProduto.Título
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
@@ -1886,7 +1886,7 @@ movimentacao2 As screen:
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Title
+                                "Estoque em falta de " & varProduto.Título
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
