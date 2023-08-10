@@ -1397,6 +1397,8 @@ movimentacao2 As screen:
                 Height: =70
                 HoverBorderColor: =ColorFade(Color.Black, 20%)
                 HoverFill: =varCorHover
+                InputTextPlaceholder: ="Tipo de movimentação"
+                IsSearchable: =false
                 Items: =Choices([@CONTROLEDEMATERIAIS].Status)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =Color.Black
@@ -1404,7 +1406,7 @@ movimentacao2 As screen:
                 PressedFill: |-
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,90%))
                 SearchFields: =["Value"]
-                SearchItems: =Choices(CONTROLEDEMATERIAIS.Status,DataCardValue9.SearchText)
+                SearchItems: =[]
                 SelectionFill: =varCorHover
                 SelectMultiple: =false
                 Size: =21 + varLetra
