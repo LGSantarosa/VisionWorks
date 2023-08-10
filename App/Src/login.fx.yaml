@@ -14,6 +14,7 @@ login As screen:
     ImagePosition: =ImagePosition.Center
 
     Image5 As image:
+        DisplayMode: =DisplayMode.View
         Height: =320
         Image: ='MicrosoftTeams-image (6)'
         Width: =640
