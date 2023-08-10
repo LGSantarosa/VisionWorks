@@ -918,6 +918,7 @@ movimentacao2 As screen:
                 Height: =70
                 HoverColor: =ColorFade(Self.Color,20%)
                 HoverFill: =varCorHover
+                IsSearchable: =false
                 Items: =Choices([@CONTROLEDEMATERIAIS].Localização)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =Color.Black
@@ -945,7 +946,7 @@ movimentacao2 As screen:
                         )
                     )
                 SearchFields: =["Value"]
-                SearchItems: =Choices(CONTROLEDEMATERIAIS.Localização,DataCardValue17.SearchText)
+                SearchItems: =[]
                 SelectionFill: =varCorHover
                 SelectMultiple: =false
                 Size: =21 + varLetra
