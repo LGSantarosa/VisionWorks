@@ -1,0 +1,69 @@
+{
+  "225faf01-38b7-4ed7-90b0-e781b44771a2": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://grouperenault.sharepoint.com/sites/Remanejo": {
+        "dataSources": {
+          "CONTROLEDEMATERIAIS": {
+            "tableName": "5c38fe97-1ad8-4095-b4fd-c2e2a64632ca"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "CONTROLEDEMATERIAIS"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "225faf01-38b7-4ed7-90b0-e781b44771a2"
+  },
+  "a04bc8d5-7d32-429a-80e1-2e2d32cf0e14": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/390724148/1.0.1641.3327/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a04bc8d5-7d32-429a-80e1-2e2d32cf0e14"
+  },
+  "b554229c-d2e6-4b42-8782-235c738de200": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://grouperenault.sharepoint.com/sites/Remanejo": {
+        "dataSources": {
+          "ESTOQUEPROJETOS": {
+            "tableName": "29caff80-6116-4be7-ad1f-ee44fc0eee60"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "ESTOQUEPROJETOS"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b554229c-d2e6-4b42-8782-235c738de200"
+  }
+}
