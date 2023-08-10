@@ -1444,14 +1444,14 @@ movimentacao2 As screen:
         "'Nome (field_2)_DataCard2' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Nome"
+            DataField: ="field_2"
             Default: =
             DisplayMode: =Parent.DisplayMode
             DisplayName: |-
                 =DataSourceInfo(
-                    [@ESTOQUEPROJETOS],
+                    [@CONTROLEDEMATERIAIS],
                     DataSourceInfo.DisplayName,
-                    "Nome"
+                    "field_2"
                 )
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
