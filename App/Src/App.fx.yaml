@@ -8,7 +8,8 @@ App As appinfo:
         Set(
             varCor,
             Color.Black
-        ) && Set(
+        ); 
+        Set(
             varImg,
             'Renault Branca'
         );
