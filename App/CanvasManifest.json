@@ -108,11 +108,11 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "aec45e2d-6079-4056-abd5-2ef6f458e486",
-    "Id": "74aac102-ac91-4a49-b106-69eea85dca26",
+    "Id": "fb20e166-eab7-4d0f-9e04-6502754328e8",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "Estoque Tooling",
+    "Name": "Estoque+Tooling.msapp",
     "OriginatingVersion": "1.331",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
