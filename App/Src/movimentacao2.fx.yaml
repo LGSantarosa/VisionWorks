@@ -1302,8 +1302,10 @@ movimentacao2 As screen:
                 ZIndex: =2
 
             AddPicture1 As addMedia:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                ChangePictureText: =
+                BorderColor: |-
+                    =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
+                BorderThickness: =1
+                ChangePictureText: =""
                 Font: =varFonte
                 Height: =320
                 Size: =20 + varLetra
