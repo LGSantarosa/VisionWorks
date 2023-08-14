@@ -1309,8 +1309,9 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =320
                 Size: =20 + varLetra
-                Text: =If(IsBlank(Image3), "Toque ou clique para adicionar uma imagem")
+                Text: ="Toque ou clique para adicionar uma imagem"
                 UseMobileCamera: =true
+                Visible: =If(IsBlank(Image3),true,false)
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey4.Y + DataCardKey4.Height + 5
