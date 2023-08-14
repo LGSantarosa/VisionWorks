@@ -838,7 +838,7 @@ movimentacao2 As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Localiza_x00e7__x00e3_o"
-            Default: =varProduto.Localização
+            Default: =
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"Localiza_x00e7__x00e3_o")
             Fill: =RGBA(0, 0, 0, 0)
@@ -867,7 +867,8 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: =Parent.DisplayName
+                Text: |-
+                    ="Localização: " & Text(varProduto.Localização.Value)
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -920,7 +921,7 @@ movimentacao2 As screen:
                 HoverFill: =varCorHover
                 IsSearchable: =false
                 Items: =Choices([@CONTROLEDEMATERIAIS].Localização)
-                OnChange: =If(Self.Selected.Value <> varProduto.Localização.Value,NewForm(Form1) && DataCardValue9.Selected.Value="Saída")
+                OnChange: =If(Self.Selected.Value <> varProduto.Localização.Value,NewForm(Form1) && Reset(DataCardValue9))
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =Color.Black
                 PressedFill: |-
