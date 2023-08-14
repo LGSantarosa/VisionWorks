@@ -351,10 +351,10 @@ localizar As screen:
 
     Container1 As groupContainer:
         Fill: =RGBA(0, 0, 0, 0.75)
-        Height: =885
+        Height: =801
         Visible: =varImagem
         Width: =640
-        Y: =126
+        Y: =210
         ZIndex: =19
 
         "'Logo Estoque_2' As image":
