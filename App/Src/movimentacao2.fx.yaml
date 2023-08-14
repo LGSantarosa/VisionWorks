@@ -1294,7 +1294,7 @@ movimentacao2 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =AddPicture1.Height
-                Image: =If(IsBlank(AddPicture1.Media), Parent.Default, AddPicture1.Media)
+                Image: =If(IsBlank(AddPicture1.Media), Parent.Default,AddPicture1.Media)
                 Tooltip: =Parent.DisplayName
                 Width: =AddPicture1.Width
                 X: =AddPicture1.X
