@@ -913,7 +913,12 @@ movimentacao2 As screen:
                 Color: =Color.Black
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: |-
+                    =If(
+                        varProduto.Localização.Value = Blank(),
+                        DisplayMode.Edit,
+                        DisplayMode.Disabled
+                    )
                 Font: =varFonte
                 Height: =70
                 HoverColor: =ColorFade(Self.Color,20%)
