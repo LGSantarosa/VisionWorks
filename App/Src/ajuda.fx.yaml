@@ -85,7 +85,7 @@ ajuda As screen:
         ZIndex: =3
 
     "'Logo estoque_1' As image":
-        Height: =220
+        Height: =230
         Image: =Switch(varCor,Color.Yellow,'MicrosoftTeams-image (2)',Color.White,'MicrosoftTeams-image (2)',Color.Black,'MicrosoftTeams-image (6)','MicrosoftTeams-image (6)')
         Width: =640
         Y: =220
