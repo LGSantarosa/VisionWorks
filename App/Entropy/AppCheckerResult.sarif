@@ -5470,6 +5470,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varImagem"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varImagem",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varImagem",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.nouveau_logo_renault_banner"
                 }
               ],

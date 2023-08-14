@@ -102,7 +102,7 @@ localizar As screen:
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            OnSelect: =ThisItem.Anexos
+            OnSelect: =Set(varImagem,true)
             TemplateFill: =
             TemplatePadding: =0
             TemplateSize: =If(Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45 < 126, 153, Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45)
