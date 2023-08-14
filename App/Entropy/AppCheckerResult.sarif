@@ -2953,10 +2953,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 16,
-                  "charOffset": 0,
+                  "charLength": 7,
+                  "charOffset": 16,
                   "snippet": {
-                    "text": "varImagemProduto"
+                    "text": ".Anexos"
                   }
                 }
               },
