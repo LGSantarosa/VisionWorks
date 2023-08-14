@@ -838,7 +838,7 @@ movimentacao2 As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Localiza_x00e7__x00e3_o"
-            Default: =
+            Default: =varProduto.Localização
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"Localiza_x00e7__x00e3_o")
             Fill: =RGBA(0, 0, 0, 0)
