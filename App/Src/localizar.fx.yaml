@@ -78,7 +78,7 @@ localizar As screen:
             DelayItemLoading: =true
             Fill: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.White,Color.Black)
-            Height: =700
+            Height: =722
             Items: |-
                 =Filter(
                     ESTOQUEPROJETOS,
@@ -106,7 +106,7 @@ localizar As screen:
             TemplateFill: =
             TemplatePadding: =0
             TemplateSize: =If(Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45 < 126, 153, Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45)
-            Y: =307
+            Y: =285
             ZIndex: =1
 
             Title5_1 As label:
@@ -359,7 +359,7 @@ localizar As screen:
 
         "'Logo Estoque_2' As image":
             Height: =802
-            Image: =varImagemProduto.Anexos
+            Image: =varImagemProduto.Anexo
             OnSelect: =Set(varImagem,false)
             Visible: =varImagem
             Width: =640
