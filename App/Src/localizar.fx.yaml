@@ -350,15 +350,16 @@ localizar As screen:
             ZIndex: =16
 
     Container1 As groupContainer:
-        Height: =802
+        Fill: =RGBA(0, 0, 0, 0.75)
+        Height: =885
         Visible: =varImagem
         Width: =640
-        Y: =210
+        Y: =126
         ZIndex: =19
 
         "'Logo Estoque_2' As image":
             Height: =802
-            Image: =
+            Image: =varImagemProduto
             OnSelect: =Set(varImagem,false)
             Visible: =varImagem
             Width: =640
