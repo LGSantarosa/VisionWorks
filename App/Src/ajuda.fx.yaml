@@ -143,7 +143,7 @@ ajuda As screen:
         OnSelect: =
         Size: =25 + varLetra
         Text: ="Voltar"
-        Width: =180
+        Width: =200
         X: =105
         Y: =1030
         ZIndex: =6
