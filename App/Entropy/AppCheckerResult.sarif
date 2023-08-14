@@ -2953,10 +2953,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 16,
-                  "charOffset": 0,
+                  "charLength": 7,
+                  "charOffset": 19,
                   "snippet": {
-                    "text": "varImagemProduto"
+                    "text": ".Anexos"
                   }
                 }
               },
@@ -5576,6 +5576,36 @@
               },
               "properties": {
                 "member": "varMedia",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.varImagemProduto"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varImagemProduto",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varImagemProduto",
                 "module": "App",
                 "type": "App"
               }

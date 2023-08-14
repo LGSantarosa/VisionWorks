@@ -358,7 +358,7 @@ localizar As screen:
 
         "'Logo Estoque_2' As image":
             Height: =802
-            Image: =varImagemProduto
+            Image: =Gallery2_1.Selected.Anexos
             OnSelect: =Set(varImagem,false)
             Visible: =varImagem
             Width: =640
