@@ -913,18 +913,14 @@ movimentacao2 As screen:
                 Color: =Color.Black
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
-                DisplayMode: |-
-                    =If(
-                        varProduto.Localização.Value = Blank(),
-                        DisplayMode.Edit,
-                        DisplayMode.Disabled
-                    )
+                DisplayMode: =Parent.DisplayMode
                 Font: =varFonte
                 Height: =70
                 HoverColor: =ColorFade(Self.Color,20%)
                 HoverFill: =varCorHover
                 IsSearchable: =false
                 Items: =Choices([@CONTROLEDEMATERIAIS].Localização)
+                OnChange: =If(DataCardValue17.Selected.Value <> varProduto.Localização.Value,NewForm(Form1),EditForm(Form1))
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =Color.Black
                 PressedFill: |-
