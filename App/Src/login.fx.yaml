@@ -15,10 +15,10 @@ login As screen:
 
     Image5 As image:
         DisplayMode: =DisplayMode.View
-        Height: =320
+        Height: =221
         Image: ='MicrosoftTeams-image (6)'
         Width: =640
-        Y: =155
+        Y: =218
         ZIndex: =1
 
     Image1 As image:
