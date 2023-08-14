@@ -920,7 +920,7 @@ movimentacao2 As screen:
                 HoverFill: =varCorHover
                 IsSearchable: =false
                 Items: =Choices([@CONTROLEDEMATERIAIS].Localização)
-                OnChange: =If(DataCardValue17.Selected.Value <> varProduto.Localização.Value,NewForm(Form1),EditForm(Form1))
+                OnChange: =If(DataCardValue17.Selected.Value <> varProduto.Localização.Value,NewForm(Form1))
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =Color.Black
                 PressedFill: |-
