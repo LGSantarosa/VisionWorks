@@ -358,7 +358,7 @@ localizar As screen:
 
         "'Logo Estoque_2' As image":
             Height: =1136
-            Image: =varImagemProduto.Anexo
+            Image: =If(IsBlank(varImagemProduto.Anexo),'Imagem não encontrada',varImagemProduto.Anexo)
             OnSelect: =Set(varImagem,false)
             Visible: =varImagem
             Width: =640
