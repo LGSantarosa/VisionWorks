@@ -591,10 +591,10 @@ principal As screen:
         ZIndex: =7
 
     "'Logo estoque' As image":
-        Height: =320
+        Height: =220
         Image: =Switch(varCor,Color.Yellow,'MicrosoftTeams-image (2)',Color.White,'MicrosoftTeams-image (2)',Color.Black,'MicrosoftTeams-image (6)','MicrosoftTeams-image (6)')
         Width: =640
-        Y: =155
+        Y: =220
         ZIndex: =8
 
     Icon5_1 As icon.Settings:
