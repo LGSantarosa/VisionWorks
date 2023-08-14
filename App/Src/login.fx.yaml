@@ -15,29 +15,11 @@ login As screen:
 
     Image5 As image:
         DisplayMode: =DisplayMode.View
-        Height: =220
+        Height: =230
         Image: ='MicrosoftTeams-image (6)'
         Width: =640
         Y: =220
         ZIndex: =1
-
-    Image1 As image:
-        Height: =200
-        Image: |-
-            =Switch(
-                varCor,
-                Color.Yellow,
-                'Renault Preta',
-                Color.White,
-                'Renault Preta',
-                Color.Black,
-                'Renault Branca',
-                'Renault Branca'
-            )
-        Width: =200
-        X: =220
-        Y: =919
-        ZIndex: =2
 
     TextInput1 As text:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -135,6 +117,6 @@ login As screen:
         OnSelect: =
         Width: =490
         X: =75
-        Y: =34
+        Y: =1000
         ZIndex: =6
 
