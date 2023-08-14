@@ -573,7 +573,7 @@ principal As screen:
         Height: =1136
         Visible: =VarConfig
         Width: =640
-        ZIndex: =10
+        ZIndex: =11
 
         PopUp_acessibilidade As rectangle:
             Fill: =RGBA(117, 117, 117, 0.93)
@@ -973,5 +973,5 @@ principal As screen:
             Width: =280
             X: =60
             Y: =60
-            ZIndex: =11
+            ZIndex: =10
 

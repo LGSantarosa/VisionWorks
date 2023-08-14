@@ -102,7 +102,7 @@ localizar As screen:
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            OnSelect: =Set(varImagem,true)
+            OnSelect: =Set(varImagem,true) && Set(varImagemProduto,ThisItem.Anexos)
             TemplateFill: =
             TemplatePadding: =0
             TemplateSize: =If(Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45 < 126, 153, Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45)
@@ -348,4 +348,18 @@ localizar As screen:
             X: =365
             Y: =220
             ZIndex: =16
+
+    Container1 As groupContainer:
+        Height: =802
+        Visible: =varImagem
+        Width: =640
+        Y: =210
+        ZIndex: =19
+
+        "'Logo Estoque_2' As image":
+            Height: =802
+            Image: =varImagemProduto
+            OnSelect: =Set(varImagem,false) && Refresh(varImagemProduto)
+            Width: =640
+            ZIndex: =1
 
