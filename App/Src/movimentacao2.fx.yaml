@@ -921,7 +921,7 @@ movimentacao2 As screen:
                 HoverFill: =varCorHover
                 IsSearchable: =false
                 Items: =Choices([@CONTROLEDEMATERIAIS].Localização)
-                OnChange: =If(Self.Selected.Value <> varProduto.Localização.Value,NewForm(Form1) && Reset(DataCardValue9))
+                OnChange: =If(Self.Selected.Value <> varProduto.Localização.Value,NewForm(Form1) && Set(varStatus,true))
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =Color.Black
                 PressedFill: |-
@@ -1479,7 +1479,7 @@ movimentacao2 As screen:
                     =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.Black,Color.White,ColorValue("#f8e458"),Color.Black)
                 ChevronHoverBackground: |-
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
-                DefaultSelectedItems: =
+                DefaultSelectedItems: =If(varStatus=true,["Saída"],Blank())
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =varFonte
