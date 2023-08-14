@@ -1302,10 +1302,12 @@ movimentacao2 As screen:
                 ZIndex: =2
 
             AddPicture1 As addMedia:
+                BorderColor: =RGBA(0, 0, 0, 1)
                 ChangePictureText: =
                 Font: =varFonte
                 Height: =320
                 Size: =20 + varLetra
+                UseMobileCamera: =true
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey4.Y + DataCardKey4.Height + 5
