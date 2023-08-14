@@ -359,7 +359,8 @@ localizar As screen:
         "'Logo Estoque_2' As image":
             Height: =802
             Image: =varImagemProduto
-            OnSelect: =Set(varImagem,false) && Refresh(varImagemProduto)
+            OnSelect: =Set(varImagem,false)
+            Visible: =varImagem
             Width: =640
             ZIndex: =1
 
