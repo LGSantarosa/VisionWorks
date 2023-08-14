@@ -126,6 +126,7 @@
     "Group2": 21,
     "Group3": 22,
     "Group4": 73,
+    "Group5": 244,
     "Group7": 74,
     "Group8": 242,
     "Group9": 243,
@@ -246,7 +247,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/14/2023 11:02:10",
+  "HeaderLastSavedDateTimeUTC": "08/14/2023 11:02:49",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "225faf01-38b7-4ed7-90b0-e781b44771a2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/998b214cac5743a1ac8fd7a960171a38\"",
@@ -334,6 +335,10 @@
     "Group4": {
       "Icon7_2": 1,
       "Label3_3": 0
+    },
+    "Group5": {
+      "Icon5": 0,
+      "Timer2": 1
     },
     "Group7": {
       "Filtro": 4,
@@ -496,6 +501,7 @@
     "Group2": {},
     "Group3": {},
     "Group4": {},
+    "Group5": {},
     "Group7": {},
     "Group8": {},
     "Group9": {},
@@ -741,6 +747,7 @@
     "Group2": 14,
     "Group3": 8,
     "Group4": 61,
+    "Group5": 0,
     "Group7": 46,
     "Group8": 227,
     "Group9": 228,

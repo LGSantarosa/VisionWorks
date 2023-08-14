@@ -13,48 +13,6 @@ principal As screen:
         )
     ImagePosition: =ImagePosition.Fill
 
-    Icon5 As icon.Globe:
-        Color: |-
-            =Switch(
-                varCor,
-                Color.Yellow,
-                ColorValue("#3b89bd"),
-                Color.Black,
-                Color.White,
-                Color.White,
-                ColorValue("#f8e458"),
-                Color.White
-            )
-        Height: =80
-        Icon: |-
-            =If(
-                Connection.Connected = false Or ConnectionSync.ConnectedError Or ConnectionSync.ConnectedWithWarning Or ConnectionSync.NotConnected,
-                Icon.GlobeNotConnected,
-                Icon.Globe
-            )
-        OnSelect: |-
-            =If(
-                varGlobo = false,
-                Set(
-                    Start,
-                    true
-                ) & Set(
-                    varGlobo,
-                    true
-                ),
-                Set(
-                    varGlobo,
-                    false
-                ) & Set(
-                    Start,
-                    false
-                ) & Reset(Timer2)
-            )
-        Width: =80
-        X: =530
-        Y: =40
-        ZIndex: =1
-
     Label1 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -955,16 +913,65 @@ principal As screen:
                 Y: =105
                 ZIndex: =6
 
-    Timer2 As timer:
-        Duration: =2000
-        Height: =70
-        OnSelect: =
-        OnTimerEnd: =Set(varGlobo,false) & Set(Start,false)
-        OnTimerStart: =Set(varGlobo,true)
-        Start: =Start
-        Visible: =false
-        Width: =280
-        X: =60
-        Y: =60
-        ZIndex: =11
+    Group5 As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =12
+
+        Icon5 As icon.Globe:
+            Color: |-
+                =Switch(
+                    varCor,
+                    Color.Yellow,
+                    ColorValue("#3b89bd"),
+                    Color.Black,
+                    Color.White,
+                    Color.White,
+                    ColorValue("#f8e458"),
+                    Color.White
+                )
+            Height: =80
+            Icon: |-
+                =If(
+                    Connection.Connected = false Or ConnectionSync.ConnectedError Or ConnectionSync.ConnectedWithWarning Or ConnectionSync.NotConnected,
+                    Icon.GlobeNotConnected,
+                    Icon.Globe
+                )
+            OnSelect: |-
+                =If(
+                    varGlobo = false,
+                    Set(
+                        Start,
+                        true
+                    ) & Set(
+                        varGlobo,
+                        true
+                    ),
+                    Set(
+                        varGlobo,
+                        false
+                    ) & Set(
+                        Start,
+                        false
+                    ) & Reset(Timer2)
+                )
+            Width: =80
+            X: =530
+            Y: =40
+            ZIndex: =1
+
+        Timer2 As timer:
+            Duration: =2000
+            Height: =70
+            OnSelect: =
+            OnTimerEnd: =Set(varGlobo,false) & Set(Start,false)
+            OnTimerStart: =Set(varGlobo,true)
+            Start: =Start
+            Visible: =false
+            Width: =280
+            X: =60
+            Y: =60
+            ZIndex: =11
 
