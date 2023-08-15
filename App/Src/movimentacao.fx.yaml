@@ -26,7 +26,7 @@ movimentacao As screen:
 
         "'Logo Estoque_3' As image":
             Height: =1136
-            Image: =If(IsBlank(varImagemProduto.Anexo),'Imagem não encontrada',varImagemProduto.Anexo.Full)
+            Image: =varImagemProduto.Anexo.Full
             OnSelect: =Set(varImagem,false)
             Visible: =varImagem
             Width: =640
@@ -71,7 +71,7 @@ movimentacao As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             NavigationStep: =0
-            OnSelect: =Set(varImagem,true) && Set(varImagemProduto,Gallery2.Selected)
+            OnSelect: =Set(varImagemProduto,Gallery2.Selected) && If(IsBlank(varImagemProduto)=true, Notify("Imagem não encontrada"),Set(varImagem,true))
             TemplatePadding: =0
             TemplateSize: =If(Title5.Height + Subtitle5.Height + Body3.Height + 45 < 140, 153, Title5.Height + Subtitle5.Height + Body3.Height + 45)
             Y: =285
