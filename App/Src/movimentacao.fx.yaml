@@ -71,7 +71,7 @@ movimentacao As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             NavigationStep: =0
-            OnSelect: =Set(varImagemProduto,Gallery2.Selected) && If(IsBlank(varImagemProduto.Anexo), Notify("Imagem não encontrada"),Set(varImagem,true))
+            OnSelect: =Set(varImagemProduto,Gallery2.Selected) && If(IsBlank(varImagemProduto.Anexo), Notify("Imagem não encontrada"),Set(varImagem,true) & Notify("Carregando"))
             TemplatePadding: =0
             TemplateSize: =If(Title5.Height + Subtitle5.Height + Body3.Height + 45 < 140, 153, Title5.Height + Subtitle5.Height + Body3.Height + 45)
             Y: =285
