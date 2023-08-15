@@ -914,7 +914,16 @@ movimentacao2 As screen:
                 Default: =varProduto.Localização
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
-                DisplayMode: =If(DataCardValue17.Selected.Value = Blank(),DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: |-
+                    =If(
+                        Form1.Mode = FormMode.New,
+                        DisplayMode.Edit,
+                        If(
+                            DataCardValue17.Selected.Value = Blank(),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        )
+                    )
                 Height: =70
                 HoverColor: =ColorFade(Self.Color,20%)
                 HoverFill: =varCorHover
@@ -1215,9 +1224,13 @@ movimentacao2 As screen:
                 DelayOutput: =true
                 DisplayMode: |-
                     =If(
-                        varProduto.Referência = Blank(),
+                        Form1.Mode = FormMode.New,
                         DisplayMode.Edit,
-                        DisplayMode.Disabled
+                        If(
+                            varProduto.Referência = Blank(),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        )
                     )
                 Font: =varFonte
                 Height: =70
@@ -1390,7 +1403,16 @@ movimentacao2 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisplayMode: =If(varProduto.Título = Blank(),DisplayMode.Edit, DisplayMode.Disabled)
+                DisplayMode: |-
+                    =If(
+                        Form1.Mode = FormMode.New,
+                        DisplayMode.Edit,
+                        If(
+                            varProduto.Título = Blank(),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        ) 
+                    )
                 Font: =varFonte
                 Height: =70
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
@@ -1669,9 +1691,13 @@ movimentacao2 As screen:
                 DelayOutput: =true
                 DisplayMode: |-
                     =If(
-                        varProduto.Fabricante = Blank(),
+                        Form1.Mode = FormMode.New,
                         DisplayMode.Edit,
-                        DisplayMode.Disabled
+                        If(
+                            varProduto.Fabricante = Blank(),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        )
                     )
                 Font: =varFonte
                 Height: =70
@@ -1750,7 +1776,16 @@ movimentacao2 As screen:
                 BorderColor: =Color.Black
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisplayMode: =If(varProduto.MABEC = Blank(),DisplayMode.Edit, DisplayMode.Disabled)
+                DisplayMode: |-
+                    =If(
+                        Form1.Mode = FormMode.New,
+                        DisplayMode.Edit,
+                        If(
+                            varProduto.MABEC = Blank(),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        )
+                    )
                 Font: =varFonte
                 Height: =70
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
@@ -1841,9 +1876,13 @@ movimentacao2 As screen:
                 DelayOutput: =true
                 DisplayMode: |-
                     =If(
-                        varProduto.'Modelo Material' = Blank(),
+                        Form1.Mode = FormMode.New,
                         DisplayMode.Edit,
-                        DisplayMode.Disabled
+                        If(
+                            varProduto.'Modelo Material' = Blank(),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        )
                     )
                 Font: =varFonte
                 Height: =70
