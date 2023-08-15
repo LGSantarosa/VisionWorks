@@ -9448,7 +9448,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Font.'Open Sans'",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Font",
           "IsLockable": false,
           "NameMapSourceSchema": "?"

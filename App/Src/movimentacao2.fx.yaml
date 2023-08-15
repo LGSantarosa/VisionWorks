@@ -916,13 +916,12 @@ movimentacao2 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Font: =varFonte
                 Height: =70
                 HoverColor: =ColorFade(Self.Color,20%)
                 HoverFill: =varCorHover
                 IsSearchable: =false
                 Items: =Choices([@CONTROLEDEMATERIAIS].Localização)
-                OnChange: =If(Self.Selected.Value <> varProduto.Localização.Value,NewForm(Form1))
+                OnChange: =
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =Color.Black
                 PressedFill: |-
@@ -999,11 +998,7 @@ movimentacao2 As screen:
                 =If(
                     DataCardValue9.Selected.Value = "Saída",
                     Value(varProduto.'Quant.') - Value(DataCardValue16.Text),
-                    Value(varProduto.'Quant.') + Value(DataCardValue16.Text),
-                    If(
-                        DataCardValue17.Selected.Value <> varProduto.Localização.Value,
-                        Value(varProduto.'Quant.') - Value(DataCardValue16.Text)
-                    )
+                    Value(varProduto.'Quant.') + Value(DataCardValue16.Text)
                 )
             Width: =640
             X: =0
@@ -1928,11 +1923,8 @@ movimentacao2 As screen:
                     varProduto.'Quant.' + Value(DataCardValue16.Text)
                 );
                 
-                If(DataCardValue17.Selected.Value <> varProduto.Localização.Value, NewForm(Form1) & SubmitForm(Form1));
-                
                 If(
                     DataCardValue9.Selected.Value = "Entrada",
-                    EditForm(Form1) &&
                     If(
                         DataCardValue17.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
                             2015,
@@ -1948,7 +1940,6 @@ movimentacao2 As screen:
                             "Entrada registrada com sucesso",
                             NotificationType.Success
                         );
-                        EditForm(Form1) &&
                         If(
                             DataCardValue11.Text = "Danone" && varMatSoma <= 3 Or DataCardValue11.Text = "Danonasso" && varMatSoma <= 5 Or DataCardValue11.Text = "MÓDULO COMPACTO" && varMatSoma <= 40,
                             Office365Outlook.SendEmailV2(
