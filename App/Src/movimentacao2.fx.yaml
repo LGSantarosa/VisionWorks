@@ -1928,8 +1928,11 @@ movimentacao2 As screen:
                     varProduto.'Quant.' + Value(DataCardValue16.Text)
                 );
                 
+                If(DataCardValue17.Selected.Value <> varProduto.Localização.Value, NewForm(Form1) & SubmitForm(Form1));
+                
                 If(
                     DataCardValue9.Selected.Value = "Entrada",
+                    EditForm(Form1) &&
                     If(
                         DataCardValue17.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
                             2015,
@@ -1945,6 +1948,7 @@ movimentacao2 As screen:
                             "Entrada registrada com sucesso",
                             NotificationType.Success
                         );
+                        EditForm(Form1) &&
                         If(
                             DataCardValue11.Text = "Danone" && varMatSoma <= 3 Or DataCardValue11.Text = "Danonasso" && varMatSoma <= 5 Or DataCardValue11.Text = "MÓDULO COMPACTO" && varMatSoma <= 40,
                             Office365Outlook.SendEmailV2(
@@ -1958,7 +1962,7 @@ movimentacao2 As screen:
                             Color.Black
                         )
                     ),
-                    If(
+                    If( 
                         DataCardValue17.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
                             2015,
                             01,
