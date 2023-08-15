@@ -867,8 +867,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: |-
-                    ="Localização: " & varProduto.Localização.Value
+                Text: ="Localização"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -915,7 +914,7 @@ movimentacao2 As screen:
                 Default: =varProduto.Localização
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =If(DataCardValue17.Selected.Value = Blank(),DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =70
                 HoverColor: =ColorFade(Self.Color,20%)
                 HoverFill: =varCorHover
@@ -1475,9 +1474,9 @@ movimentacao2 As screen:
                     =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.Black,Color.White,ColorValue("#f8e458"),Color.Black)
                 ChevronHoverBackground: |-
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
-                DefaultSelectedItems: =If(DataCardValue17.Selected.Value <> varProduto.Localização.Value,["Saída"],Blank())
+                DefaultSelectedItems: =//If(DataCardValue17.Selected.Value <> varProduto.Localização.Value;["Saída"];Blank())
                 DisplayFields: =["Value"]
-                DisplayMode: =If(DataCardValue17.Selected.Value <> varProduto.Localização.Value,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =Parent.DisplayMode
                 Font: =varFonte
                 Height: =70
                 HoverBorderColor: =ColorFade(Color.Black, 20%)
