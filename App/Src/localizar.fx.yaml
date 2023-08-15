@@ -102,7 +102,7 @@ localizar As screen:
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            OnSelect: =Set(varImagem,true) && Set(varImagemProduto,Gallery2_1.Selected)
+            OnSelect: =Set(varImagemProduto,Gallery2_1.Selected) && If(IsBlank(varImagemProduto.Anexo), Notify("Imagem não encontrada", NotificationType.Error),Set(varImagem,true) & Notify("Carregando", NotificationType.Information))
             TemplateFill: =
             TemplatePadding: =0
             TemplateSize: =If(Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45 < 126, 153, Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45)
