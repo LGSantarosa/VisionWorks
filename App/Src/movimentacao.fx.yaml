@@ -309,7 +309,7 @@ movimentacao As screen:
             Icon: =Icon.Add
             OnSelect: |-
                 =NewForm(Form1) && Navigate(movimentacao2, ScreenTransition.Cover);
-                Set(varProduto, Blank()) & Reset(Radio1_1) & UpdateContext({varFiltro:false})
+                Set(varProduto, Blank()) & Reset(Radio1_1) & UpdateContext({varFiltro:false}) & Set(varVoltar,false)
             Width: =75
             X: =535
             Y: =1030
