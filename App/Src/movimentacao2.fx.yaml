@@ -1980,7 +1980,7 @@ movimentacao2 As screen:
                 
                 
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "Danonasso" && varMatSoma <= 5 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 4,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 4,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMatSoma,
@@ -1988,7 +1988,7 @@ movimentacao2 As screen:
                             )
                         );
                 
-                        
+                
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
                             varCorLetra,
                             Color.Black
