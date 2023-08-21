@@ -1279,7 +1279,7 @@ movimentacao2 As screen:
         Anexo_DataCard1 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Anexo"
-            Default: =ThisItem.Anexo
+            Default: =varProduto.Anexo
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"Anexo")
             Fill: =RGBA(0, 0, 0, 0)
