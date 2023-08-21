@@ -1978,7 +1978,7 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "Danone" && varMatSoma <= 3 Or DataCardValue11.Text = "Danonasso" && varMatSoma <= 5 Or DataCardValue11.Text = "MÓDULO COMPACTO" && varMatSoma <= 40,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "Danonasso" && varMatSoma <= 5 Or DataCardValue11.Text = "MÓDULO COMPACTO" && varMatSoma <= 40,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMatSoma,
@@ -2006,7 +2006,7 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "Danone" && varMat <= 3 Or DataCardValue11.Text = "Danonasso" && varMat <= 5 Or DataCardValue11.Text = "MÓDULO COMPACTO" && varMat <= 40,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "Danonasso" && varMat <= 5 Or DataCardValue11.Text = "MÓDULO COMPACTO" && varMat <= 40,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
