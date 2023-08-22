@@ -1976,8 +1976,6 @@ movimentacao2 As screen:
                             "Entrada registrada com sucesso",
                             NotificationType.Success
                         );
-                
-                
                         If(
                             DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 4,
                             Office365Outlook.SendEmailV2(
@@ -1986,14 +1984,12 @@ movimentacao2 As screen:
                                 "Estoque em falta de " & varProduto.Título
                             )
                         );
-                
-                
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
                             varCorLetra,
                             Color.Black
                         )
                     ),
-                    If( 
+                    If(
                         DataCardValue17.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
                             2015,
                             01,
@@ -2008,17 +2004,13 @@ movimentacao2 As screen:
                             "Saída registrada com sucesso",
                             NotificationType.Success
                         );
-                
-                
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "Danonasso" && varMat <= 5 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
                                 "Estoque em falta de " & varProduto.Título
                             )
-                
-                
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
                             varCorLetra,
