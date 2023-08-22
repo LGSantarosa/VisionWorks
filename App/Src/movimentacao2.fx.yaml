@@ -1005,8 +1005,10 @@ movimentacao2 As screen:
             Update: |-
                 =If(
                     DataCardValue9.Selected.Value = "Saída",
+                    If(varCopia = true, varProduto.'Quant.' = 0,
                     Value(varProduto.'Quant.') - Value(DataCardValue16.Text),
                     Value(varProduto.'Quant.') + Value(DataCardValue16.Text)
+                )
                 )
             Width: =640
             X: =0
