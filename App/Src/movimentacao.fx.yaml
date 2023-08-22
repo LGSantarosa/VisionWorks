@@ -92,7 +92,7 @@ movimentacao As screen:
                 Size: =15 + varLetra
                 Text: =ThisItem.Título
                 VerticalAlign: =VerticalAlign.Top
-                Width: =400
+                Width: =410
                 X: =15
                 Y: =25
                 ZIndex: =1
@@ -148,20 +148,8 @@ movimentacao As screen:
                 HoverColor: |-
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
                 Icon: =Icon.ChevronRight
-                OnSelect: |-
-                    =Set(
-                        varProduto,
-                        Gallery2.Selected
-                    ) & EditForm(Form1) & Navigate(
-                        movimentacao2,
-                        ScreenTransition.Cover
-                    ) & Set(
-                        varVoltar,
-                        false
-                    ) & Set(
-                        varCopia,
-                        false
-                    )
+                OnSelect: |
+                    =Set(varProduto, Gallery2.Selected) & EditForm(Form1) & Navigate(movimentacao2, ScreenTransition.Cover) & Set(varVoltar,false) & Set(varCopia,false)
                 PaddingBottom: =16
                 PaddingLeft: =16
                 PaddingRight: =16
