@@ -1049,7 +1049,14 @@ movimentacao2 As screen:
                     ="Estoque: " & varProduto.'Quant.'
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =varCorHover
-                OnChange: =
+                OnChange: |-
+                    =Set(
+                        varMat,
+                        varProduto.'Quant.' - Value(DataCardValue16.Text)
+                    ) & Set(
+                        varMatSoma,
+                        varProduto.'Quant.' + Value(DataCardValue16.Text)
+                    )
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -1952,15 +1959,7 @@ movimentacao2 As screen:
             HoverColor: =ColorFade(Self.Color, 50%)
             Icon: =Icon.Save
             OnSelect: |-
-                =Set(
-                    varMat,
-                    varProduto.'Quant.' - Value(DataCardValue16.Text)
-                ) & Set(
-                    varMatSoma,
-                    varProduto.'Quant.' + Value(DataCardValue16.Text)
-                );
-                
-                If(
+                =If(
                     DataCardValue9.Selected.Value = "Entrada",
                     If(
                         DataCardValue17.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
