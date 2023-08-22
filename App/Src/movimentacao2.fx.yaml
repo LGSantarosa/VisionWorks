@@ -2069,7 +2069,7 @@ movimentacao2 As screen:
                     ) & Set(
                         varVoltar,
                         false
-                    ) & ResetForm(Form1) & ResetForm(Form5)
+                    ) & ResetForm(Form1) & ResetForm(Form5) & Set(varCopia,false)
                 )
             Width: =75
             X: =25
