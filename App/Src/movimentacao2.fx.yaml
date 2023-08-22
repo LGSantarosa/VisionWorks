@@ -1003,9 +1003,9 @@ movimentacao2 As screen:
             Height: =50
             Required: =false
             Update: |-
-                =If(
+                =If(varCopia = true, Value(DataCardValue16.Text),
+                If(
                     DataCardValue9.Selected.Value = "Saída",
-                    If(varCopia = true, varProduto.'Quant.' = 0,
                     Value(varProduto.'Quant.') - Value(DataCardValue16.Text),
                     Value(varProduto.'Quant.') + Value(DataCardValue16.Text)
                 )

@@ -149,7 +149,7 @@ movimentacao As screen:
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
                 Icon: =Icon.ChevronRight
                 OnSelect: |
-                    =Set(varProduto, Gallery2.Selected) & EditForm(Form1) & Navigate(movimentacao2, ScreenTransition.Cover) & Set(varVoltar,false)
+                    =Set(varProduto, Gallery2.Selected) & EditForm(Form1) & Navigate(movimentacao2, ScreenTransition.Cover) & Set(varVoltar,false) & Set(varCopia,false)
                 PaddingBottom: =16
                 PaddingLeft: =16
                 PaddingRight: =16
@@ -309,7 +309,7 @@ movimentacao As screen:
             Icon: =Icon.Add
             OnSelect: |-
                 =NewForm(Form1) && Navigate(movimentacao2, ScreenTransition.Cover);
-                Set(varProduto, Blank()) & Reset(Radio1_1) & UpdateContext({varFiltro:false}) & Set(varVoltar,false)
+                Set(varProduto, Blank()) & Reset(Radio1_1) & UpdateContext({varFiltro:false}) & Set(varVoltar,false) & Set(varCopia,false)
             Width: =75
             X: =535
             Y: =1030
