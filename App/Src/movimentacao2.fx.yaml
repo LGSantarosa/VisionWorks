@@ -2046,7 +2046,7 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4 Or DataCardValue11.Text = "popo" && varMatSoma <= 3,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4 Or DataCardValue11.Text = "popo" && varMat <= 3,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
