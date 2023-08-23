@@ -1317,7 +1317,7 @@ movimentacao2 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =AddPicture1.Height
-                Image: =If(AddPicture1.Media=Blank(), "abc" , varProduto.Anexo.Full)
+                Image: =If(AddPicture1.Media=Blank(), "abc" , AddPicture1)
                 Tooltip: =Parent.DisplayName
                 Width: =AddPicture1.Width
                 X: =AddPicture1.X
@@ -1332,7 +1332,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =320
                 Size: =20 + varLetra
-                Text: =If(Image3.Image = Blank(), "Toque ou clique para adicionar uma imagem","")
+                Text: =If(Image3.Image = "abc", "Toque ou clique para adicionar uma imagem","")
                 UseMobileCamera: =true
                 Width: =Parent.Width - 60
                 X: =30
@@ -1970,11 +1970,7 @@ movimentacao2 As screen:
                             01
                         ) Or DataCardValue16.Text = "" Or DataCardValue11.Text = "" Or DataCardValue10.Text = "",
                         Notify(
-                            "Dados Inválidos",
-                            NotificationType.Error
-                        )&&
-                        Notify(
-                            "Imagem necessaria",
+                            "Dados Inválidos e imagem necessaria",
                             NotificationType.Error
                         ),
                         SubmitForm(Form1) & SubmitForm(Form5);
@@ -2033,11 +2029,7 @@ movimentacao2 As screen:
                             01
                         ) Or DataCardValue16.Text = "" Or DataCardValue11.Text = "" Or Image3.Image = "abc" Or DataCardValue10.Text = "" Or Value(DataCardValue16.Text) > varProduto.'Quant.',
                         Notify(
-                            "Dados inválidos",
-                            NotificationType.Error
-                        )&&
-                        Notify(
-                            "Imagem necessaria",
+                            "Dados inválidos e imagem necessaria",
                             NotificationType.Error
                         ),
                         SubmitForm(Form1) & SubmitForm(Form5);
