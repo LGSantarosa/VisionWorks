@@ -1979,7 +1979,7 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 4 && DataCardValue11.Text = "popo" && varMatSoma <= 3,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 4 Or DataCardValue11.Text = "popo" && varMatSoma <= 3,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMatSoma,
@@ -1996,12 +1996,12 @@ movimentacao2 As screen:
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMatSoma,
                                 "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material'
-                            )&&
-                            Office365Outlook.SendEmailV2(
-                                "bruna.cardoso@renault.com",
-                                "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material'
                             )
+                           /* Office365Outlook.SendEmailV2(
+                                "bruna.cardoso@renault.com";
+                                "Estoque: " & varMatSoma;
+                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material'
+                            )*/
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
                             varCorLetra,
@@ -2024,22 +2024,29 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4 Or DataCardValue11.Text = "popo" && varMatSoma <= 3,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material',
+                                {
+                                Attachments: {
+                                    Name:AddPicture1.FileName,
+                                    ContentBytes: Image3.Image,
+                                    '@odata.type': ""
+                                }
+                            }
                             )&&
                             Office365Outlook.SendEmailV2(
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMat,
                                 "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material'
-                            )&&
-                            Office365Outlook.SendEmailV2(
-                                "bruna.cardoso@renault.com",
-                                "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material'
                             )
+                            /*Office365Outlook.SendEmailV2(
+                                "bruna.cardoso@renault.com";
+                                "Estoque: " & varMat;
+                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material'
+                            )*/
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
                             varCorLetra,
