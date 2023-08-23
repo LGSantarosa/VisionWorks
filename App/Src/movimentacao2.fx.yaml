@@ -1317,7 +1317,7 @@ movimentacao2 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =AddPicture1.Height
-                Image: =If(IsBlank(AddPicture1.Media), Parent.Default,AddPicture1.Media)
+                Image: =If(AddPicture1.Media=Blank(), "abc" , AddPicture1.Media)
                 Tooltip: =Parent.DisplayName
                 Width: =AddPicture1.Width
                 X: =AddPicture1.X
@@ -1332,7 +1332,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =320
                 Size: =20 + varLetra
-                Text: =If(Image3.Image=Blank(), "Toque ou clique para adicionar uma imagem","")
+                Text: =If(Image3.Image="abc", "Toque ou clique para adicionar uma imagem","")
                 UseMobileCamera: =true
                 Width: =Parent.Width - 60
                 X: =30
@@ -1986,7 +1986,7 @@ movimentacao2 As screen:
                                 "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material',
                                 {
                                 Attachments: {
-                                    Name:Image3.FileName,
+                                    Name:AddPicture1.FileName,
                                     ContentBytes: Image3.Image,
                                     '@odata.type': ""
                                 }
@@ -2031,7 +2031,7 @@ movimentacao2 As screen:
                                 "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material',
                                 {
                                 Attachments: {
-                                    Name:Image3.FileName,
+                                    Name:AddPicture1.FileName,
                                     ContentBytes: Image3.Image,
                                     '@odata.type': ""
                                 }
