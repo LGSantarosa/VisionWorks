@@ -1317,12 +1317,12 @@ movimentacao2 As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 Height: =AddPicture1.Height
-                Image: =If(AddPicture1.Media=Blank(), "abc" , AddPicture1)
+                Image: =varPic
                 Tooltip: =Parent.DisplayName
                 Width: =AddPicture1.Width
                 X: =AddPicture1.X
                 Y: =AddPicture1.Y
-                ZIndex: =2
+                ZIndex: =3
 
             AddPicture1 As addMedia:
                 BorderColor: |-
@@ -1331,13 +1331,14 @@ movimentacao2 As screen:
                 ChangePictureText: =""
                 Font: =varFonte
                 Height: =320
+                OnSelect: =
                 Size: =20 + varLetra
-                Text: =If(Image3.Image = "abc", "Toque ou clique para adicionar uma imagem","")
+                Text: =If(Image3.Image = Blank(), "Toque ou clique para adicionar uma imagem","")
                 UseMobileCamera: =true
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey4.Y + DataCardKey4.Height + 5
-                ZIndex: =3
+                ZIndex: =4
 
             ErrorMessage4 As label:
                 AutoHeight: =true
@@ -1353,7 +1354,7 @@ movimentacao2 As screen:
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =Image3.Y + Image3.Height
-                ZIndex: =4
+                ZIndex: =5
 
             StarVisible4 As label:
                 Align: =Align.Center
@@ -1364,7 +1365,7 @@ movimentacao2 As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey4.Y
-                ZIndex: =5
+                ZIndex: =6
 
         Material_DataCard2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1983,39 +1984,18 @@ movimentacao2 As screen:
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material',
-                                {
-                                Attachments: {
-                                    Name:AddPicture1.FileName,
-                                    ContentBytes: Image3.Image,
-                                    '@odata.type': ""
-                                }
-                            }
+                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
                             ) &&
                             Office365Outlook.SendEmailV2(
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material',
-                                {
-                                Attachments: {
-                                    Name:AddPicture1.FileName,
-                                    ContentBytes: Image3.Image,
-                                    '@odata.type': ""
-                                }
-                            }
+                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
+                            ),
+                            Office365Outlook.SendEmailV2(
+                                "bruna.cardoso@renault.com",
+                                "Estoque: " & varMatSoma,
+                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
                             )
-                           /* Office365Outlook.SendEmailV2(
-                                "bruna.cardoso@renault.com";
-                                "Estoque: " & varMatSoma;
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material';
-                                {
-                                Attachments: {
-                                    Name:AddPicture1.FileName;
-                                    ContentBytes: Image3.Image;
-                                    '@odata.type': ""
-                                }
-                            }
-                            )*/
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
                             varCorLetra,
@@ -2042,39 +2022,18 @@ movimentacao2 As screen:
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material',
-                                {
-                                Attachments: {
-                                    Name:AddPicture1.FileName,
-                                    ContentBytes: Image3.Image,
-                                    '@odata.type': ""
-                                }
-                            }
+                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
                             )&&
                             Office365Outlook.SendEmailV2(
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material',
-                                {
-                                Attachments: {
-                                    Name:AddPicture1.FileName,
-                                    ContentBytes: Image3.Image,
-                                    '@odata.type': ""
-                                }
-                            }
+                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
+                            ),
+                            Office365Outlook.SendEmailV2(
+                                "bruna.cardoso@renault.com",
+                                "Estoque: " & varMat,
+                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
                             )
-                            /*Office365Outlook.SendEmailV2(
-                                "bruna.cardoso@renault.com";
-                                "Estoque: " & varMat;
-                                "Estoque em falta de " & varProduto.Título & "//" & varProduto.'Modelo Material';
-                                {
-                                Attachments: {
-                                    Name:AddPicture1.FileName;
-                                    ContentBytes: Image3.Image;
-                                    '@odata.type': ""
-                                }
-                            }
-                            )*/
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
                             varCorLetra,
