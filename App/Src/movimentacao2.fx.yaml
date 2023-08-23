@@ -2017,6 +2017,11 @@ movimentacao2 As screen:
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
                                 "Estoque em falta de " & varProduto.Título
+                            )&&
+                            Office365Outlook.SendEmailV2(
+                                "marcio.m.santos-extern@renault.com",
+                                "Estoque: " & varMatSoma,
+                                "Estoque em falta de " & varProduto.Título
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
