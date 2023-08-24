@@ -1965,7 +1965,7 @@ movimentacao2 As screen:
                 =If(
                     DataCardValue9.Selected.Value = "Entrada",
                     If(
-                        DataCardValue17.Selected.Value = Blank() Or Image3.Image = "abc" Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
+                        DataCardValue17.Selected.Value = Blank() Or Image3.Image = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
                             2015,
                             01,
                             01
@@ -1980,21 +1980,21 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 4 Or DataCardValue11.Text = "popo" && varMatSoma <= 3,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 4,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             ) &&
                             Office365Outlook.SendEmailV2(
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             ),
                             Office365Outlook.SendEmailV2(
                                 "bruna.cardoso@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
@@ -2007,7 +2007,7 @@ movimentacao2 As screen:
                             2015,
                             01,
                             01
-                        ) Or DataCardValue16.Text = "" Or DataCardValue11.Text = "" Or Image3.Image = "abc" Or DataCardValue10.Text = "" Or Value(DataCardValue16.Text) > varProduto.'Quant.',
+                        ) Or DataCardValue16.Text = "" Or DataCardValue11.Text = "" Or Image3.Image = Blank() Or DataCardValue10.Text = "" Or Value(DataCardValue16.Text) > varProduto.'Quant.',
                         Notify(
                             "Dados inválidos e imagem necessaria",
                             NotificationType.Error
@@ -2018,21 +2018,21 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4 Or DataCardValue11.Text = "popo" && varMat <= 3,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             )&&
                             Office365Outlook.SendEmailV2(
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             ),
                             Office365Outlook.SendEmailV2(
                                 "bruna.cardoso@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & " // " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
