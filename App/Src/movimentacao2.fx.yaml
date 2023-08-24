@@ -1990,9 +1990,14 @@ movimentacao2 As screen:
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMatSoma,
                                 "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
-                            ),
+                            )&&
                             Office365Outlook.SendEmailV2(
                                 "bruna.cardoso@renault.com",
+                                "Estoque: " & varMatSoma,
+                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                            )&&
+                            Office365Outlook.SendEmailV2(
+                                "vinicius.oleiro-extern@renault.com",
                                 "Estoque: " & varMatSoma,
                                 "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             )
@@ -2028,10 +2033,15 @@ movimentacao2 As screen:
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMat,
                                 "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
-                            ),
+                            )&&
                             Office365Outlook.SendEmailV2(
                                 "bruna.cardoso@renault.com",
                                 "Estoque: " & varMat,
+                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                            )&&
+                            Office365Outlook.SendEmailV2(
+                                "vinicius.oleiro-extern@renault.com",
+                                "Estoque: " & varMatSoma,
                                 "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             )
                         );
