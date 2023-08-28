@@ -3,7 +3,7 @@ App As appinfo:
     OnStart: |-
         =Set(
             varLetra,
-            5
+            Slider1.Value
         );
         Set(
             varCor,

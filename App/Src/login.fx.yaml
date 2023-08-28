@@ -94,7 +94,7 @@ login As screen:
                 )
             ) && Set(
                 varLetra,
-                5
+                Slider1.Value
             )
         PressedBorderColor: =Color.Black
         PressedColor: =
