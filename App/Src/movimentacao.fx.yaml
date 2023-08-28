@@ -233,7 +233,7 @@ movimentacao As screen:
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
             Icon: =Icon.FilterFlat
             OnSelect: |-
-                =UpdateContext({varFiltro:true}); Reset(Gallery2)
+                =UpdateContext({varFiltro:true})
             Visible: =If(varFiltro = false, true, true)
             X: =565
             Y: =215
@@ -263,7 +263,7 @@ movimentacao As screen:
                         50%
                     )
                 )
-            Height: =650
+            Height: =610
             Visible: =varFiltro
             Width: =270 + Radio1.Size
             X: =370 - Radio1_1.Size
@@ -302,7 +302,7 @@ movimentacao As screen:
             HoverColor: =ColorFade(Self.Color,30%)
             Icon: =Icon.Cancel
             OnSelect: |-
-                =UpdateContext({varFiltro:false}) //& Reset(Radio1);;Reset(Radio2)
+                =UpdateContext({varFiltro:false})
             Visible: =If(varFiltro = true, true, false)
             X: =565
             Y: =220
