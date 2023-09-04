@@ -924,6 +924,7 @@ movimentacao2 As screen:
                             DisplayMode.Disabled
                         )
                     )
+                Font: =varFonte
                 Height: =70
                 HoverColor: =ColorFade(Self.Color,20%)
                 HoverFill: =varCorHover
