@@ -71,7 +71,24 @@ movimentacao As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             NavigationStep: =0
-            OnSelect: =Set(varImagemProduto,Gallery2.Selected) && If(IsBlank(varImagemProduto.Anexo), Notify("Imagem não encontrada", NotificationType.Error),Set(varImagem,true) & Notify("Carregando", NotificationType.Information))
+            OnSelect: |-
+                =Set(
+                    varImagemProduto,
+                    Gallery2.Selected
+                ) && If(
+                    IsBlank(varImagemProduto.Anexo),
+                    Notify(
+                        "Imagem não encontrada",
+                        NotificationType.Error
+                    ),
+                    Set(
+                        varImagem,
+                        true
+                    ) & Notify(
+                        "Carregando",
+                        NotificationType.Information
+                    )
+                )
             TemplatePadding: =0
             TemplateSize: =If(Title5.Height + Subtitle5.Height + Body3.Height + 45 < 126, 153, Title5.Height + Subtitle5.Height + Body3.Height + 45)
             Y: =285
@@ -148,8 +165,20 @@ movimentacao As screen:
                 HoverColor: |-
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
                 Icon: =Icon.ChevronRight
-                OnSelect: |
-                    =Set(varProduto, Gallery2.Selected) & EditForm(Form1) & Navigate(movimentacao2, ScreenTransition.Cover) & Set(varVoltar,false) & Set(varCopia,false)
+                OnSelect: |-
+                    =Set(
+                        varProduto,
+                        Gallery2.Selected
+                    ) & EditForm(Form1) & Navigate(
+                        movimentacao2,
+                        ScreenTransition.Cover
+                    ) & Set(
+                        varVoltar,
+                        false
+                    ) & Set(
+                        varCopia,
+                        false
+                    )
                 PaddingBottom: =16
                 PaddingLeft: =16
                 PaddingRight: =16
@@ -323,8 +352,20 @@ movimentacao As screen:
             HoverColor: =ColorFade(Self.Color,50%)
             Icon: =Icon.Add
             OnSelect: |-
-                =NewForm(Form1) && Navigate(movimentacao2, ScreenTransition.Cover);
-                Set(varProduto, Blank()) & Reset(Radio1_1) & UpdateContext({varFiltro:false}) & Set(varVoltar,false) & Set(varCopia,false)
+                =NewForm(Form1) && Navigate(
+                    movimentacao2,
+                    ScreenTransition.Cover
+                );
+                Set(
+                    varProduto,
+                    Blank()
+                ) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
+                    varVoltar,
+                    false
+                ) & Set(
+                    varCopia,
+                    false
+                )
             Width: =75
             X: =535
             Y: =1030
