@@ -1981,7 +1981,7 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 4,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMatSoma <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMatSoma <= 5 Or DataCardValue11.Text = "VOLTIMETRO 300 V" && varMatSoma <= 10 Or DataCardValue11.Text = "ARDUINO LEONARDO" && varMatSoma <= 5 Or DataCardValue11.Text = "WIZ110SR" && varMatSoma <= 2 Or DataCardValue11.Text = "DISJUNTOR BIPOLAR MCB" && varMatSoma <= 5 Or DataCardValue11.Text = "DISJUNTOR TERMOMAGNETICO" && varMatSoma <= 5 Or DataCardValue11.Text = "DISJUNTOR MONOPOLAR" && varMatSoma <= 5 Or DataCardValue11.Text = "DISJUNTOR BIPOLAR MCB" && varMatSoma <= 5 Or DataCardValue11.Text = "DISJUNTOR MINI BIPOLAR" && varMatSoma <= 5 Or DataCardValue11.Text = "DISJUNTOR BIPOLAR MCB" && varMatSoma <= 5,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMatSoma,
@@ -2024,7 +2024,7 @@ movimentacao2 As screen:
                             NotificationType.Success
                         );
                         If(
-                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 4,
+                            DataCardValue11.Text = "H0,5/14 orange" && varMat <= 3 Or DataCardValue11.Text = "MODULO COMPACTO" && varMat <= 5 Or DataCardValue11.Text = "VOLTIMETRO 300 V" && varMat <= 10 Or DataCardValue11.Text = "ARDUINO LEONARDO" && varMat <= 5 Or DataCardValue11.Text = "WIZ110SR" && varMat <= 1 Or DataCardValue11.Text = "DISJUNTOR BIPOLAR MCB" && varMat <= 5 Or DataCardValue11.Text = "DISJUNTOR TERMOMAGNETICO" && varMat <= 5 Or DataCardValue11.Text = "DISJUNTOR MONOPOLAR" && varMat <= 5 Or DataCardValue11.Text = "DISJUNTOR BIPOLAR MCB" && varMat <= 5 Or DataCardValue11.Text = "DISJUNTOR MINI BIPOLAR" && varMat <= 5 Or DataCardValue11.Text = "DISJUNTOR BIPOLAR MCB" && varMat <= 5 Or DataCardValue11.Text = "CAIXA PARA MONTAGEM" && varMat <= 5 Or DataCardValue11.Text = "BORNE TERRA MODULAR" && varMat <= 1 Or DataCardValue11.Text = "BORNE DE PASSAGEM" && varMat <= 2 Or DataCardValue11.Text = "PORTA ETIQUETA" && varMat <= 1 Or DataCardValue11.Text = "DISJUNTOR BIPOLAR MCB" && varMat <= 5 Or DataCardValue11.Text = "SECCIONADORA 12A" && varMat <= 10 Or DataCardValue11.Text = "PRENSA CABO ECOTEC" && varMat <= 30 Or DataCardValue11.Text = "FECHO TRIANGULO METAL FMT" && varMat <= 10 Or DataCardValue11.Text = "H1/14D rot SV" && varMat <= 2 Or DataCardValue11.Text = "H2,5/15SV blue" && varMat <= 2 Or DataCardValue11.Text = "H0,75/14 white" && varMat <= 2 Or DataCardValue11.Text = "QUINT POWER" && varMat <= 3 Or DataCardValue11.Text = "RELAY MOLUDE" && varMat <= 10 Or DataCardValue11.Text = "OBTURADOR PLÁSTICO 22mm" && varMat <= 5 Or DataCardValue11.Text = "PRENSA CABO 3/4 POLEGADAS" && varMat <= 30 Or DataCardValue11.Text = "PRENSA CABO 3/4 POLEGADAS" && varMat <= 30,
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
@@ -2042,7 +2042,7 @@ movimentacao2 As screen:
                             )&&
                             Office365Outlook.SendEmailV2(
                                 "vinicius.oleiro-extern@renault.com",
-                                "Estoque: " & varMatSoma,
+                                "Estoque: " & varMat,
                                 "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
                             )
                         );
