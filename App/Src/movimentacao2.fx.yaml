@@ -2088,7 +2088,7 @@ movimentacao2 As screen:
                     ) & ResetForm(Form1) & ResetForm(Form5) & Set(
                         varProduto,
                         Blank()
-                    ) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & Reset(Radio1_1) & Reset(TextSearchBox1_2) & Reset(Radio1),
+                    ),
                     Navigate(
                         'Localizar 2',
                         ScreenTransition.CoverRight
