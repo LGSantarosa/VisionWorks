@@ -1985,7 +1985,7 @@ movimentacao2 As screen:
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & "//Localização: " & varProduto.Localização.Value & "// Modelo: " & varProduto.'Modelo Material'
                             ) && Office365Outlook.SendEmailV2(
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMatSoma,
@@ -1993,11 +1993,11 @@ movimentacao2 As screen:
                             ) && Office365Outlook.SendEmailV2(
                                 "bruna.cardoso@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & "//Localização: " & varProduto.Localização.Value & "// Modelo: " & varProduto.'Modelo Material'
                             ) && Office365Outlook.SendEmailV2(
                                 "vinicius.oleiro-extern@renault.com",
                                 "Estoque: " & varMatSoma,
-                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & "//Localização: " & varProduto.Localização.Value & "// Modelo: " & varProduto.'Modelo Material'
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
@@ -2025,19 +2025,19 @@ movimentacao2 As screen:
                             Office365Outlook.SendEmailV2(
                                 "luiz.santarosa-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                               "Estoque em falta de " & varProduto.Título & "//Localização: " & varProduto.Localização.Value & "// Modelo: " & varProduto.'Modelo Material'
                             ) && Office365Outlook.SendEmailV2(
                                 "marcio.m.santos-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & "//Localização: " & varProduto.Localização.Value & "// Modelo: " & varProduto.'Modelo Material'
                             ) && Office365Outlook.SendEmailV2(
                                 "bruna.cardoso@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                               "Estoque em falta de " & varProduto.Título & "//Localização: " & varProduto.Localização.Value & "// Modelo: " & varProduto.'Modelo Material'
                             ) && Office365Outlook.SendEmailV2(
                                 "vinicius.oleiro-extern@renault.com",
                                 "Estoque: " & varMat,
-                                "Estoque em falta de " & varProduto.Título & " // Modelo: " & varProduto.'Modelo Material'
+                                "Estoque em falta de " & varProduto.Título & "//Localização: " & varProduto.Localização.Value & "// Modelo: " & varProduto.'Modelo Material'
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
