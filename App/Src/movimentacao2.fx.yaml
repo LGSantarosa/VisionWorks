@@ -2085,7 +2085,7 @@ movimentacao2 As screen:
                     Navigate(
                         movimentacao,
                         ScreenTransition.CoverRight
-                    ) & ResetForm(Form1) & ResetForm(Form5) & Set(
+                    ) & ResetForm(Form1) & ResetForm(Form5) & Reset(Gallery2) & Set(
                         varProduto,
                         Blank()
                     ),
