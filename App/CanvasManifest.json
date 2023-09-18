@@ -1,6 +1,10 @@
 {
   "FormatVersion": "0.24",
   "Header": {
+    "AnalysisOptions": {
+      "DataflowAnalysisEnabled": false,
+      "DataflowAnalysisFlagStateToggledByUser": false
+    },
     "DocVersion": "1.334",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
@@ -20,6 +24,7 @@
       "classiccontrols": false,
       "consistentreturnschemafortabularfunctions": true,
       "copyandmerge": true,
+      "dataflowanalysisenabled": false,
       "datatablev2control": true,
       "dataverseactionsenabled": false,
       "delaycontrolrendering": true,
@@ -46,7 +51,6 @@
       "enableruntimepolicies": false,
       "enablesaveloadcleardataonweb": false,
       "enableupdateifdelegation": false,
-      "enhanceddelegation": true,
       "enhancedgalleryinitialization": true,
       "errorhandling": true,
       "expandedsavedatasupport": true,
