@@ -305,7 +305,7 @@ localizar As screen:
                         50%
                     )
                 )
-            Height: =650
+            Height: =610
             Visible: =varFiltro
             Width: =270 + Radio1.Size
             X: =370 - Radio1.Size
