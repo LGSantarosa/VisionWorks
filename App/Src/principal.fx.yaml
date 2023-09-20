@@ -279,7 +279,7 @@ principal As screen:
             =Set(
                 varLetra,
                 Slider1.Value
-            ) & Refresh(CONTROLEDEMATERIAIS) & Reset(Gallery2_1) & Navigate(
+            ) & Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2_1) & Navigate(
                 localizar,
                 ScreenTransition.Cover
             ) & Set(
