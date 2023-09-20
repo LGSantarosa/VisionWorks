@@ -732,7 +732,7 @@ principal As screen:
                     =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
                 HandleSize: =55
                 Height: =120
-                Max: =20
+                Max: =25
                 OnChange: |-
                     =UpdateContext({varLetra:(Slider1.Value)})
                 PressedBorderColor: =varCorBTT
@@ -742,7 +742,7 @@ principal As screen:
                 ValueFill: |-
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,60%),Color.White,ColorFade(ColorValue("#3e77b6"),60%),ColorFade(Color.Black,60%))
                 Width: =465
-                X: =87
+                X: =88
                 Y: =400
                 ZIndex: =12
 

@@ -2082,7 +2082,7 @@ movimentacao2 As screen:
             Height: =127
             OnSelect: |
                 =
-            Size: =25 + varLetra
+            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 25 + varLetra)
             TabIndex: =0
             Text: ="Salvar"
             Width: =205
@@ -2134,7 +2134,7 @@ movimentacao2 As screen:
             FontWeight: =FontWeight.Bold
             Height: =96
             OnSelect: =
-            Size: =25 + varLetra
+            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
             Text: ="Voltar"
             Width: =225
             X: =100

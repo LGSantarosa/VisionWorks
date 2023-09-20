@@ -747,10 +747,10 @@
                 ColorValue("#f8e458"),
                 Color.White
             )
-        Size: =Sum(25 + varLetra)
+        Size: =Sum(15 + varLetra)
         Text: ="Movimentar"
         Width: =300
-        X: =310
+        X: =320
         Y: =1030
         ZIndex: =7
 

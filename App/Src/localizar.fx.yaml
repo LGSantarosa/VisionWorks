@@ -193,7 +193,7 @@ localizar As screen:
                         ColorValue("#f8e458"),
                         Color.White
                     )
-                Height: =100
+                Height: =100 + varLetra
                 HoverColor: |-
                     =Switch(
                         varCor,
@@ -226,7 +226,7 @@ localizar As screen:
                 PaddingTop: =16
                 TabIndex: =0
                 Tooltip: ="Exibir detalhes do item"
-                Width: =100
+                Width: =100 + varLetra
                 X: =Parent.TemplateWidth - Self.Width - 12
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =4
