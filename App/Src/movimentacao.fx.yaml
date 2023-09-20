@@ -255,8 +255,8 @@ movimentacao As screen:
             HoverBorderColor: =RGBA(149, 149, 149, 1)
             HoverColor: =Self.Color
             HoverFill: =varCorHover
-            OnChange: =Reset(Gallery2)
-            OnSelect: =Reset(Gallery2)
+            OnChange: =Reset(Gallery2) & Refresh(ESTOQUEPROJETOS)
+            OnSelect: =Reset(Gallery2) & Refresh(ESTOQUEPROJETOS)
             PaddingLeft: =70
             RadiusBottomLeft: =0
             RadiusBottomRight: =0

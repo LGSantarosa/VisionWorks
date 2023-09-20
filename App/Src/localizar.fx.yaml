@@ -256,8 +256,8 @@ localizar As screen:
             HoverBorderColor: =RGBA(149, 149, 149, 1)
             HoverColor: =Self.Color
             HoverFill: =
-            OnChange: =Reset(Gallery2_1)
-            OnSelect: =Reset(Gallery2_1)
+            OnChange: =Reset(Gallery2_1) & Refresh(ESTOQUEPROJETOS)
+            OnSelect: =Reset(Gallery2_1) & Refresh(ESTOQUEPROJETOS)
             PaddingLeft: =70
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
