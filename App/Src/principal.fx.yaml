@@ -276,10 +276,10 @@ principal As screen:
                 )
             )
         OnSelect: |-
-            =Navigate(
+            =Refresh(CONTROLEDEMATERIAIS) & Reset(Gallery2_1) & Navigate(
                 localizar,
                 ScreenTransition.Cover
-            ) & Refresh(CONTROLEDEMATERIAIS) & Reset(Gallery2_1) & Set(
+            ) & Set(
                 varLetra,
                 Slider1.Value
             ) & Set(
@@ -422,10 +422,10 @@ principal As screen:
                 )
             )
         OnSelect: |-
-            =Navigate(
+            =Refresh(CONTROLEDEMATERIAIS) & Reset(Gallery2) & Navigate(
                 movimentacao,
                 ScreenTransition.Cover
-            ) & Refresh(CONTROLEDEMATERIAIS) & Reset(Gallery2) & Set(
+            ) & Set(
                 varLetra,
                 Slider1.Value
             ) & Set(
