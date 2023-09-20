@@ -37,10 +37,11 @@ movimentacao As screen:
 
     Timer1 As timer:
         AutoStart: =true
+        Duration: =00001
         Height: =70
         OnTimerEnd: =Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
         OnTimerStart: =
-        Start: =varTempoMov
+        Start: =true
         Width: =280
         X: =40
         Y: =40
