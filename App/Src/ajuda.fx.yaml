@@ -92,6 +92,7 @@ ajuda As screen:
         ZIndex: =4
 
     Icon7_4 As icon.ChevronLeft:
+        AccessibleLabel: ="Icone para retornar a tela anterior"
         BorderColor: =RGBA(0, 0, 0, 1)
         Color: =varCorBTT
         Height: =75
@@ -130,6 +131,7 @@ ajuda As screen:
                 varEmail,
                 false
             )
+        TabIndex: =0
         Width: =75
         X: =25
         Y: =1030
@@ -157,6 +159,7 @@ ajuda As screen:
         ZIndex: =7
 
     UploadedImage1 As image:
+        AccessibleLabel: ="Imagem escolhida para representar o problema"
         BorderColor: =If(varAdd=true,varCorBTT,RGBA(0, 0, 0, 0))
         BorderThickness: =2
         Fill: =
@@ -164,6 +167,7 @@ ajuda As screen:
         Image: =If(AddMediaButton1.Media=Blank(), "abc" , AddMediaButton1.Media)
         ImagePosition: =ImagePosition.Fill
         OnSelect: =Set(varEmail,true)
+        TabIndex: =0
         Visible: =varEmail
         Width: =490
         X: =75
@@ -178,6 +182,7 @@ ajuda As screen:
         ZIndex: =11
 
         TextInput3_1 As text:
+            AccessibleLabel: ="Barra de texto referente a ajuda, utilizar caso tenha algum problema com o app"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =Switch(varCor,Color.Yellow,Color.Black,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
             Default: =""
@@ -202,6 +207,7 @@ ajuda As screen:
             ZIndex: =1
 
         TextInput3 As text:
+            AccessibleLabel: =" "
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
             Color: |-
@@ -231,18 +237,21 @@ ajuda As screen:
             ZIndex: =2
 
         AddArquivo As icon.Attachment:
+            AccessibleLabel: =" "
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =Color.Black
             Height: =80
             HoverColor: =ColorFade(Self.Color, 80%)
             Icon: =Icon.PaperClip
             OnSelect: =Set(varAdd,true)
+            TabIndex: =0
             Width: =75
             X: =480
             Y: =AddMediaButton1.Y
             ZIndex: =9
 
         AddMediaButton1 As addMedia:
+            AccessibleLabel: ="Icone para adição de imagem"
             BorderColor: =RGBA(0, 0, 0, 0)
             ChangePictureText: =
             Color: =RGBA(255, 255, 255, 0)

@@ -14,10 +14,9 @@ movimentacao2 As screen:
     Form5 As form:
         DataSource: =CONTROLEDEMATERIAIS
         DefaultMode: =FormMode.New
-        Height: =735
+        Height: =0
         Visible: =false
         Width: =640
-        Y: =228
         ZIndex: =5
 
         Data_DataCard2 As typedDataCard.dateEditCard:
@@ -875,6 +874,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue17 As combobox:
+                AccessibleLabel: ="Localização do material"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: |-
                     =Switch(
@@ -1041,6 +1041,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue16 As text:
+                AccessibleLabel: ="Quantidade que será retirada ou adicionada no estoque"
                 BorderColor: =Color.Black
                 Default: =""
                 DelayOutput: =true
@@ -1133,6 +1134,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue2 As datepicker:
+                AccessibleLabel: ="Data da movimentação"
                 BorderColor: =Color.Black
                 DefaultDate: =Now()
                 DisplayMode: =Parent.DisplayMode
@@ -1410,6 +1412,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue11 As text:
+                AccessibleLabel: ="Titulo do material"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -1501,6 +1504,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue9 As combobox:
+                AccessibleLabel: ="Status do material, entrada ou saída dele"
                 BorderColor: =Color.Black
                 ChevronBackground: |-
                     =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.Black,Color.White,ColorValue("#f8e458"),Color.Black)
@@ -1606,6 +1610,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue10 As text:
+                AccessibleLabel: ="Nome de quem está fazendo "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =""
                 DelayOutput: =true
@@ -2046,6 +2051,7 @@ movimentacao2 As screen:
                         )
                     )
                 )
+            TabIndex: =0
             Width: =75
             X: =530
             Y: =1030
@@ -2060,6 +2066,7 @@ movimentacao2 As screen:
             OnSelect: |
                 =
             Size: =25 + varLetra
+            TabIndex: =0
             Text: ="Salvar"
             Width: =205
             X: =325
@@ -2097,6 +2104,7 @@ movimentacao2 As screen:
                         false
                     ) & Set(varCopia,false)
                 )
+            TabIndex: =0
             Width: =75
             X: =25
             Y: =1030

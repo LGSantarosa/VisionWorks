@@ -22,6 +22,7 @@ login As screen:
         ZIndex: =1
 
     TextInput1 As text:
+        AccessibleLabel: ="Barra de texto refentente a senha"
         BorderColor: =RGBA(0, 0, 0, 1)
         Default: =""
         Font: =varFonte
@@ -42,6 +43,7 @@ login As screen:
         ZIndex: =3
 
     TextInput2 As text:
+        AccessibleLabel: ="Barra de texto referente ao login"
         BorderColor: =RGBA(0, 0, 0, 1)
         Default: =""
         Font: =varFonte

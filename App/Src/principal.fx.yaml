@@ -529,6 +529,7 @@ principal As screen:
         ZIndex: =6
 
     "'Tooling Logo' As image":
+        AccessibleLabel: ="Logo da empresa"
         BorderColor: =RGBA(0, 0, 0, 1)
         Image: ='Logo Tooling - vetor'
         OnSelect: |-
@@ -543,6 +544,7 @@ principal As screen:
                     )
                 )
             )*/
+        TabIndex: =0
         Width: =490
         X: =75
         Y: =1000
@@ -576,6 +578,7 @@ principal As screen:
         ZIndex: =11
 
         PopUp_acessibilidade As rectangle:
+            AccessibleLabel: ="Pop Up que abrirá caso aperte em 'Movimentar'"
             Fill: =RGBA(117, 117, 117, 0.93)
             Height: =1136
             TabIndex: =0
@@ -722,6 +725,7 @@ principal As screen:
                 ZIndex: =11
 
             Slider1 As slider:
+                AccessibleLabel: ="Barra de rolagem, para modificar o tamanho da fonte"
                 BorderColor: =RGBA(0, 0, 0, 0)
                 Default: =5
                 HandleFill: |-
@@ -921,6 +925,7 @@ principal As screen:
         ZIndex: =12
 
         Icon5 As icon.Globe:
+            AccessibleLabel: ="Icone de internet, mostra a cone"
             Color: |-
                 =Switch(
                     varCor,
@@ -957,6 +962,7 @@ principal As screen:
                         false
                     ) & Reset(Timer2)
                 )
+            TabIndex: =0
             Width: =80
             X: =530
             Y: =40

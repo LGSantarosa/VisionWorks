@@ -10,10 +10,6 @@ App As appinfo:
             Color.Black
         ); 
         Set(
-            varImg,
-            'Renault Branca'
-        );
-        Set(
             varCorLetra,
             Color.Black
         );

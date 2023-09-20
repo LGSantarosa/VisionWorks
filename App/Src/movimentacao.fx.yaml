@@ -24,10 +24,12 @@ movimentacao As screen:
         Width: =640
         ZIndex: =12
 
-        "'Logo Estoque_3' As image":
+        "'Imagem do material' As image":
+            AccessibleLabel: ="Imagem referente ao material. Caso clique no nome do material será apresentado a sua imagem"
             Height: =1136
             Image: =varImagemProduto.Anexo.Full
             OnSelect: =Set(varImagem,false)
+            TabIndex: =0
             Visible: =varImagem
             Width: =640
             ZIndex: =1
@@ -40,12 +42,14 @@ movimentacao As screen:
         ZIndex: =14
 
         "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+            AccessibleLabel: ="Materiais do estoque"
             BorderColor: =RGBA(0, 0, 0, 0)
+            ContentLanguage: ="Pesquisa dos materiais"
             DelayItemLoading: =true
             Fill: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.White,Color.Black)
             FocusedBorderColor: =
-            FocusedBorderThickness: =0
+            FocusedBorderThickness: =5
             Height: =700
             Items: |-
                 =Filter(
@@ -89,6 +93,7 @@ movimentacao As screen:
                         NotificationType.Information
                     )
                 )
+            TabIndex: =0
             TemplatePadding: =0
             TemplateSize: =If(Title5.Height + Subtitle5.Height + Body3.Height + 45 < 126, 153, Title5.Height + Subtitle5.Height + Body3.Height + 45)
             Y: =285
@@ -183,6 +188,7 @@ movimentacao As screen:
                 PaddingLeft: =16
                 PaddingRight: =16
                 PaddingTop: =16
+                TabIndex: =0
                 Tooltip: ="Exibir detalhes do item"
                 Width: =100
                 X: =530
@@ -199,6 +205,7 @@ movimentacao As screen:
                 ZIndex: =5
 
             Icon2 As icon.Copy:
+                AccessibleLabel: ="Botão de copiar, caso pressionado, copiará todos as informações do produto"
                 Color: |-
                     =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
                 Height: =100
@@ -226,14 +233,17 @@ movimentacao As screen:
                 PaddingLeft: =16
                 PaddingRight: =16
                 PaddingTop: =16
+                TabIndex: =0
                 Width: =100
                 X: =425
                 Y: =25
                 ZIndex: =6
 
         TextSearchBox1_1 As text:
+            AccessibleLabel: ="Barra de pesquisa referente aos materiais"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =
+            ContentLanguage: ="Pesquisa dos materiais"
             Default: =""
             DelayOutput: =true
             EnableSpellCheck: =true
@@ -258,17 +268,21 @@ movimentacao As screen:
             ZIndex: =2
 
         Icon3_2 As icon.FilterFlat:
+            AccessibleLabel: ="Icone que caso seja pressionado, abrirá o filtro"
             Color: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
+            ContentLanguage: ="Pesquisa dos materiais"
             Icon: =Icon.FilterFlat
             OnSelect: |-
                 =UpdateContext({varFiltro:true})
+            TabIndex: =0
             Visible: =If(varFiltro = false, true, true)
             X: =565
             Y: =215
             ZIndex: =7
 
         Filtro_1 As groupContainer:
+            ContentLanguage: ="Pesquisa dos materiais"
             Fill: |-
                 =Switch(
                     varCor,
@@ -300,6 +314,7 @@ movimentacao As screen:
             ZIndex: =8
 
             Radio1_1 As radio:
+                AccessibleLabel: ="Filtro de localização, caso escolha uma localização, aparecerá apenas materiais referentes a ela"
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 Color: =Color.Black
@@ -316,22 +331,28 @@ movimentacao As screen:
                 ZIndex: =2
 
         Icon6_1 As icon.Reset:
+            AccessibleLabel: ="Icone que caso seja pressionado, restaura o filtro"
             Color: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
+            ContentLanguage: ="Pesquisa dos materiais"
             Icon: =Icon.Reset
             OnSelect: =Reset(Radio1_1) & Reset(Gallery2)
+            TabIndex: =0
             Visible: =If(varFiltro = true, true, false)
             X: =365
             Y: =220
             ZIndex: =9
 
         Icon3_3 As icon.FilterFlat:
+            AccessibleLabel: ="Caso pressionado, fechará o filtro"
             Color: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
+            ContentLanguage: ="Pesquisa dos materiais"
             HoverColor: =ColorFade(Self.Color,30%)
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({varFiltro:false})
+            TabIndex: =0
             Visible: =If(varFiltro = true, true, false)
             X: =565
             Y: =220
@@ -345,6 +366,7 @@ movimentacao As screen:
         ZIndex: =14
 
         Icon4 As icon.Add:
+            AccessibleLabel: ="Icone de criar novo material, usará caso o material não exista no estoque"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =varCorBTT
             Height: =75
@@ -366,6 +388,7 @@ movimentacao As screen:
                     varCopia,
                     false
                 )
+            TabIndex: =0
             Width: =75
             X: =535
             Y: =1030
@@ -393,6 +416,7 @@ movimentacao As screen:
         ZIndex: =14
 
         Icon7 As icon.ChevronLeft:
+            AccessibleLabel: ="Icone para retornar a tela anterior"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =varCorBTT
             Height: =75
@@ -400,6 +424,7 @@ movimentacao As screen:
             Icon: =Icon.BackArrow
             OnSelect: |-
                 =Navigate(principal,ScreenTransition.UnCoverRight) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & Reset(Radio1_1) & UpdateContext({varFiltro:false}) & Set(varCorLetra,Color.Black)
+            TabIndex: =0
             Width: =75
             X: =25
             Y: =1030

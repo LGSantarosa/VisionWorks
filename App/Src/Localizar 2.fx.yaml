@@ -48,6 +48,7 @@
                 ZIndex: =1
 
             DataCardValue26 As combobox:
+                AccessibleLabel: ="Localização do material"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: =varCor
                 ChevronDisabledBackground: |-
@@ -153,6 +154,7 @@
                 ZIndex: =1
 
             DataCardValue25 As text:
+                AccessibleLabel: ="Quantidade do material em sua localização"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -242,6 +244,7 @@
                 ZIndex: =1
 
             DataCardValue20 As text:
+                AccessibleLabel: ="Título do material"
                 BorderColor: =Color.Black
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -332,6 +335,7 @@
                 ZIndex: =1
 
             DataCardValue21 As text:
+                AccessibleLabel: ="Referêncial do material, codigos ou nomes usuais do produto"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -419,6 +423,7 @@
                 ZIndex: =1
 
             DataCardValue22 As text:
+                AccessibleLabel: ="Fabricante do material"
                 BorderColor: |-
                     =If(
                         IsBlank(Parent.Error),
@@ -511,6 +516,7 @@
                 ZIndex: =1
 
             DataCardValue23 As text:
+                AccessibleLabel: ="Numero de compra do produto"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -598,6 +604,7 @@
                 ZIndex: =1
 
             DataCardValue24 As text:
+                AccessibleLabel: ="Numero de série do material, modelo do mesmo"
                 BorderColor: |-
                     =If(
                         IsBlank(Parent.Error),
@@ -651,12 +658,14 @@
                 ZIndex: =4
 
     Icon7_3 As icon.ChevronLeft:
+        AccessibleLabel: ="Icone para retornar a tela anterior"
         BorderColor: =RGBA(0, 0, 0, 1)
         Color: =varCorBTT
         Height: =75
         HoverColor: =ColorFade(Self.Color,50%)
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(localizar,ScreenTransition.CoverRight)
+        TabIndex: =0
         Width: =75
         X: =25
         Y: =1030

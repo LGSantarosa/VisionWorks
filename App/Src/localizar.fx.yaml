@@ -34,6 +34,7 @@ localizar As screen:
         ZIndex: =17
 
         Icon7_2 As icon.ChevronLeft:
+            AccessibleLabel: ="Icone para retornar a tela anterior"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =varCorBTT
             Height: =75
@@ -47,6 +48,7 @@ localizar As screen:
                     varCorLetra,
                     Color.Black
                 ) & Reset(TextSearchBox1_2)
+            TabIndex: =0
             Width: =75
             X: =25
             Y: =1030
@@ -73,8 +75,10 @@ localizar As screen:
         ZIndex: =17
 
         "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+            AccessibleLabel: ="Materiais do estoque"
             BorderColor: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
+            ContentLanguage: ="Barra de pesquisa referente aos materiais"
             DelayItemLoading: =true
             Fill: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.White,Color.Black)
@@ -103,6 +107,7 @@ localizar As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             OnSelect: =Set(varImagemProduto,Gallery2_1.Selected) && If(IsBlank(varImagemProduto.Anexo), Notify("Imagem não encontrada", NotificationType.Error),Set(varImagem,true) & Notify("Carregando", NotificationType.Information))
+            TabIndex: =0
             TemplateFill: =
             TemplatePadding: =0
             TemplateSize: =If(Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45 < 126, 153, Title5_1.Height + Subtitle5_1.Height + Body3_1.Height + 45)
@@ -219,6 +224,7 @@ localizar As screen:
                 PaddingLeft: =16
                 PaddingRight: =16
                 PaddingTop: =16
+                TabIndex: =0
                 Tooltip: ="Exibir detalhes do item"
                 Width: =100
                 X: =Parent.TemplateWidth - Self.Width - 12
@@ -237,6 +243,7 @@ localizar As screen:
         TextSearchBox1_2 As text:
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =
+            ContentLanguage: ="Barra de pesquisa referente aos materiais"
             Default: =""
             DisabledColor: =RGBA(255, 255, 255, 1)
             EnableSpellCheck: =true
@@ -261,6 +268,7 @@ localizar As screen:
             ZIndex: =2
 
         Icon3 As icon.FilterFlat:
+            AccessibleLabel: ="Icone que caso seja pressionado, abrirá o filtro"
             Color: |-
                 =Switch(
                     varCor,
@@ -272,16 +280,19 @@ localizar As screen:
                     Color.Black,
                     Color.Black
                 )
+            ContentLanguage: ="Barra de pesquisa referente aos materiais"
             Icon: =Icon.FilterFlat
             OnSelect: |-
                 =UpdateContext({varFiltro: true});
                 Reset(Gallery2_1)
+            TabIndex: =0
             Visible: =If(varFiltro = false, true, true)
             X: =564
             Y: =218
             ZIndex: =13
 
         Filtro As groupContainer:
+            ContentLanguage: ="Barra de pesquisa referente aos materiais"
             Fill: |-
                 =Switch(
                     varCor,
@@ -313,6 +324,7 @@ localizar As screen:
             ZIndex: =14
 
             Radio1 As radio:
+                AccessibleLabel: ="Filtro de localização, caso escolha uma localização, aparecerá apenas materiais referentes a ela"
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 Color: =Color.Black
@@ -329,21 +341,27 @@ localizar As screen:
                 ZIndex: =2
 
         Icon3_1 As icon.FilterFlat:
+            AccessibleLabel: ="Caso pressionado, fechará o filtro"
             Color: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
+            ContentLanguage: ="Barra de pesquisa referente aos materiais"
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({varFiltro:false}) //& Reset(Radio1);;Reset(Radio2)
+            TabIndex: =0
             Visible: =If(varFiltro = true, true, false)
             X: =565
             Y: =220
             ZIndex: =15
 
         Icon6 As icon.Reset:
+            AccessibleLabel: ="Icone que caso seja pressionado, restaura o filtro"
             Color: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
+            ContentLanguage: ="Barra de pesquisa referente aos materiais"
             Icon: =Icon.Reset
             OnSelect: =Reset(Radio1) & Reset(Gallery2_1)
+            TabIndex: =0
             Visible: =If(varFiltro = true, true, false)
             X: =365
             Y: =220
@@ -356,10 +374,12 @@ localizar As screen:
         Width: =640
         ZIndex: =19
 
-        "'Logo Estoque_2' As image":
+        "'Imagem do material 2' As image":
+            AccessibleLabel: ="Imagem referente ao material. Caso clique no nome do material será apresentado a sua imagem"
             Height: =1136
             Image: =If(IsBlank(varImagemProduto.Anexo),'Imagem não encontrada',varImagemProduto.Anexo.Full)
             OnSelect: =Set(varImagem,false)
+            TabIndex: =0
             Visible: =varImagem
             Width: =640
             ZIndex: =1
