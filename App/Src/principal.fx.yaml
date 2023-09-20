@@ -425,6 +425,9 @@ principal As screen:
             =Set(
                 varLetra,
                 Slider1.Value
+            ) & Set(
+                varTempoMov,
+                true
             ) & Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2) & Navigate(
                 movimentacao,
                 ScreenTransition.Cover
