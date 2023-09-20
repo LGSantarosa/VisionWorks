@@ -192,7 +192,7 @@ movimentacao As screen:
                 Tooltip: ="Exibir detalhes do item"
                 Width: =100
                 X: =530
-                Y: =25
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =4
 
             Separator5_2 As rectangle:
@@ -236,7 +236,7 @@ movimentacao As screen:
                 TabIndex: =0
                 Width: =100
                 X: =425
-                Y: =25
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =6
 
         TextSearchBox1_1 As text:
