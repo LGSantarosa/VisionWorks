@@ -40,7 +40,7 @@ movimentacao As screen:
         DisplayMode: =DisplayMode.Disabled
         Duration: =00001
         Height: =0
-        OnTimerEnd: =Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
+        OnTimerEnd: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
         OnTimerStart: =
         Start: =true
         Visible: =false
