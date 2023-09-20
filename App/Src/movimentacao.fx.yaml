@@ -320,7 +320,7 @@ movimentacao As screen:
                         50%
                     )
                 )
-            Height: =610
+            Height: =If(varLetra > 20, 640 ,610)
             Visible: =varFiltro
             Width: =270 + Radio1.Size
             X: =370 - Radio1_1.Size
@@ -333,7 +333,7 @@ movimentacao As screen:
                 BorderStyle: =BorderStyle.None
                 Color: =Color.Black
                 Font: =varFonte
-                Height: =530
+                Height: =If(varLetra > 20, 560 ,530)
                 HoverColor: =ColorFade(Self.Color,30%)
                 Items: =Choices(CONTROLEDEMATERIAIS.Localização)
                 OnSelect: =Reset(Gallery2)
@@ -353,7 +353,7 @@ movimentacao As screen:
             OnSelect: =Reset(Radio1_1) & Reset(Gallery2)
             TabIndex: =0
             Visible: =If(varFiltro = true, true, false)
-            X: =365
+            X: =If(varLetra > 20, 350,365)
             Y: =220
             ZIndex: =9
 
