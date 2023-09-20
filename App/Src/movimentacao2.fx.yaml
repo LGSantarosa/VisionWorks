@@ -51,6 +51,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue28 As datepicker:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
@@ -127,6 +128,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue29 As combobox:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -209,6 +211,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue30 As text:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -292,6 +295,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue31 As text:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -376,6 +380,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue32 As text:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -453,6 +458,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue34 As text:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -536,6 +542,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue35 As text:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -619,6 +626,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue36 As text:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -696,6 +704,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue37 As combobox:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -778,6 +787,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue3 As text:
+                AccessibleLabel: =" "
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -1231,6 +1241,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue1 As text:
+                AccessibleLabel: ="Referêncial do material, codigos ou nomes usuais do produto"
                 BorderColor: =Color.Black
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -1328,6 +1339,7 @@ movimentacao2 As screen:
                 ZIndex: =3
 
             AddPicture1 As addMedia:
+                AccessibleLabel: ="Foto do produto, clique para adicionar ou alterar"
                 BorderColor: |-
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
                 BorderThickness: =1
@@ -1701,6 +1713,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue13 As text:
+                AccessibleLabel: ="Fabricante do material"
                 BorderColor: =Color.Black
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -1788,6 +1801,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue14 As text:
+                AccessibleLabel: ="Codigo de compra do material"
                 BorderColor: =Color.Black
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -1886,6 +1900,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue15 As text:
+                AccessibleLabel: ="Numero de série do material, modelo do mesmo"
                 BorderColor: =Color.Black
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -1962,6 +1977,7 @@ movimentacao2 As screen:
         ZIndex: =8
 
         Icon1 As icon.Save:
+            AccessibleLabel: ="Icone de salvar movimentação, após confirmar os dados, pressione para confirmar a alteração no estoque"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =varCorBTT
             Height: =75
@@ -2060,6 +2076,7 @@ movimentacao2 As screen:
         Label3_2 As label:
             Align: =Align.Right
             Color: =varCorBTT
+            FocusedBorderThickness: =5
             Font: =varFonte
             FontWeight: =FontWeight.Bold
             Height: =127
@@ -2081,6 +2098,7 @@ movimentacao2 As screen:
         ZIndex: =8
 
         Icon7_1 As icon.ChevronLeft:
+            AccessibleLabel: ="Icone para retornar a tela anterior"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =varCorBTT
             Height: =75

@@ -241,6 +241,7 @@ localizar As screen:
                 ZIndex: =5
 
         TextSearchBox1_2 As text:
+            AccessibleLabel: ="Barra de pesquisa referente aos materiais"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =
             ContentLanguage: ="Barra de pesquisa referente aos materiais"
