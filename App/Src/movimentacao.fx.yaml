@@ -36,8 +36,10 @@ movimentacao As screen:
             ZIndex: =1
 
     Timer1 As timer:
+        AutoStart: =true
         Height: =70
-        OnTimerStart: =Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
+        OnTimerEnd: =Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
+        OnTimerStart: =
         Start: =varTempoMov
         Width: =280
         X: =40
