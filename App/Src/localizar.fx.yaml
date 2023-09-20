@@ -37,7 +37,7 @@ localizar As screen:
             AccessibleLabel: ="Icone para retornar a tela anterior"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =varCorBTT
-            Height: =75
+            Height: =75 + varLetra
             HoverColor: =ColorFade(Self.Color,50%)
             Icon: =Icon.BackArrow
             OnSelect: |-
@@ -49,22 +49,22 @@ localizar As screen:
                     Color.Black
                 ) & Reset(TextSearchBox1_2)
             TabIndex: =0
-            Width: =75
-            X: =25
-            Y: =1030
+            Width: =75 + varLetra
+            X: =Label3_3.X - 95
+            Y: =Label3.Y + 8
             ZIndex: =4
 
         Label3_3 As label:
             Color: =varCorBTT
             Font: =varFonte
             FontWeight: =FontWeight.Bold
-            Height: =70
+            Height: =98
             OnSelect: =
-            Size: =25 + varLetra
+            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
             Text: ="Voltar"
-            Width: =220
-            X: =105
-            Y: =1030
+            Width: =180
+            X: =103
+            Y: =1018
             ZIndex: =5
 
     Group7 As group:

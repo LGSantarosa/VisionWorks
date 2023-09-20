@@ -405,7 +405,7 @@ movimentacao As screen:
             TabIndex: =0
             Width: =75 + varLetra
             X: =Label3_5.X + 250
-            Y: =Label3_5.Y + 18
+            Y: =Label3_5.Y + 20
             ZIndex: =5
 
         Label3_5 As label:
@@ -415,7 +415,7 @@ movimentacao As screen:
             FontWeight: =FontWeight.Bold
             Height: =127
             OnSelect: =
-            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 25 + varLetra)
+            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 20 + varLetra)
             Text: ="Novo item"
             Width: =252
             X: =283
