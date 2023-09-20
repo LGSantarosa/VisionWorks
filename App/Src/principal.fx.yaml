@@ -425,7 +425,7 @@ principal As screen:
             =Navigate(
                 movimentacao,
                 ScreenTransition.Cover
-            ) & Refresh(CONTROLEDEMATERIAIS) & Set(
+            ) & Refresh(CONTROLEDEMATERIAIS) & Reset(Gallery2) & Set(
                 varLetra,
                 Slider1.Value
             ) & Set(
