@@ -1007,7 +1007,7 @@ movimentacao2 As screen:
         "'Quant._DataCard2' As typedDataCard.numberEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Quant_x002e_"
-            Default: =
+            Default: =""
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"Quant_x002e_")
             Fill: =RGBA(0, 0, 0, 0)
