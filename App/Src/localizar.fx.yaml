@@ -385,3 +385,15 @@ localizar As screen:
             Width: =640
             ZIndex: =1
 
+    Timer1_1 As timer:
+        AutoStart: =true
+        DisplayMode: =DisplayMode.Disabled
+        Duration: =00001
+        Height: =0
+        OnTimerEnd: =Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2_1)
+        OnTimerStart: =
+        Start: =true
+        Visible: =false
+        Width: =0
+        ZIndex: =20
+
