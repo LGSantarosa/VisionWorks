@@ -336,7 +336,7 @@ localizar As screen:
                 OnSelect: =Reset(Gallery2_1)
                 RadioBorderColor: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
                 RadioSelectionFill: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
-                Size: =15 + varLetra
+                Size: =If(varLetra > 20, 12 + varLetra, 15 + varLetra)
                 Width: =300 + Self.Size
                 Y: =80
                 ZIndex: =2
