@@ -276,7 +276,10 @@ principal As screen:
                 )
             )
         OnSelect: |-
-            =Set(
+            =Notify(
+                "aguarde",
+                NotificationType.Information
+            ) & Set(
                 varLetra,
                 Slider1.Value
             ) & Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2_1) & Navigate(
@@ -422,7 +425,10 @@ principal As screen:
                 )
             )
         OnSelect: |-
-            =Set(
+            =Notify(
+                "aguarde",
+                NotificationType.Information
+            ) & Set(
                 varLetra,
                 Slider1.Value
             ) & Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2) & Navigate(
