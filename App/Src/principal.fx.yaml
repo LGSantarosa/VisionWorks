@@ -422,12 +422,12 @@ principal As screen:
                 )
             )
         OnSelect: |-
-            =Refresh(CONTROLEDEMATERIAIS) & Reset(Gallery2) & Navigate(
-                movimentacao,
-                ScreenTransition.Cover
-            ) & Set(
+            =Set(
                 varLetra,
                 Slider1.Value
+            ) & Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2) & Navigate(
+                movimentacao,
+                ScreenTransition.Cover
             ) & Set(
                 varCorLetra,
                 Color.White
