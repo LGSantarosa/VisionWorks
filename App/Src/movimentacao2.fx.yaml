@@ -2022,6 +2022,9 @@ movimentacao2 As screen:
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
+                            varNovo,
+                            false
+                        ) & Set(
                             varCorLetra,
                             Color.Black
                         )
@@ -2062,6 +2065,9 @@ movimentacao2 As screen:
                             )
                         );
                         Navigate(principal) & Reset(TextSearchBox1_1) & Refresh(CONTROLEDEMATERIAIS) & ResetForm(Form1) & ResetForm(Form5) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
+                            varNovo,
+                            false
+                        ) & Set(
                             varCorLetra,
                             Color.Black
                         )
