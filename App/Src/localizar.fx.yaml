@@ -77,7 +77,7 @@ localizar As screen:
         "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
             AccessibleLabel: ="Materiais do estoque"
             BorderColor: |-
-                =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
+                =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.Black,Color.White,ColorValue("#f8e458"),Color.Black)
             ContentLanguage: ="Barra de pesquisa referente aos materiais"
             DelayItemLoading: =true
             Fill: |-
