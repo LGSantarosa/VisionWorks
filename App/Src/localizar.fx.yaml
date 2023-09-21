@@ -388,7 +388,7 @@ localizar As screen:
     Timer1_1 As timer:
         AutoStart: =true
         DisplayMode: =DisplayMode.Disabled
-        Duration: =30000
+        Duration: =10000
         Height: =0
         OnTimerEnd: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2_1)
         OnTimerStart: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2_1)

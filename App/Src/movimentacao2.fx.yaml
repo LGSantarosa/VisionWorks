@@ -2135,7 +2135,7 @@ movimentacao2 As screen:
                     ) & Set(
                         varNovo,
                         false
-                    )
+                    ) & ResetForm(Form1) & ResetForm(Form5)
                 )
             TabIndex: =0
             Width: =75
