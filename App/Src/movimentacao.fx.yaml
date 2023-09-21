@@ -418,11 +418,11 @@ movimentacao As screen:
             FontWeight: =FontWeight.Bold
             Height: =127
             OnSelect: =
-            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 20 + varLetra)
+            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
             Text: ="Novo item"
             Width: =252
             X: =283
-            Y: =1001
+            Y: =1005
             ZIndex: =6
 
     Group11 As group:
