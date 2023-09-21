@@ -401,6 +401,9 @@ movimentacao As screen:
                 ) & Set(
                     varCopia,
                     false
+                ) & Set(
+                    varNovo,
+                    true
                 )
             TabIndex: =0
             Width: =75 + varLetra
