@@ -256,8 +256,8 @@ localizar As screen:
             HoverBorderColor: =RGBA(149, 149, 149, 1)
             HoverColor: =Self.Color
             HoverFill: =
-            OnChange: =Reset(Gallery2_1) & Refresh(ESTOQUEPROJETOS)
-            OnSelect: =Reset(Gallery2_1) & Refresh(ESTOQUEPROJETOS)
+            OnChange: =Reset(Gallery2_1) & Refresh(ESTOQUEPROJETOS) & Set(comecar,true)
+            OnSelect: =Reset(Gallery2_1) & Refresh(ESTOQUEPROJETOS) & Set(comecar,true)
             PaddingLeft: =70
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
@@ -388,11 +388,11 @@ localizar As screen:
     Timer1_1 As timer:
         AutoStart: =true
         DisplayMode: =DisplayMode.Disabled
-        Duration: =00001
+        Duration: =30000
         Height: =0
         OnTimerEnd: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2_1)
-        OnTimerStart: =
-        Start: =true
+        OnTimerStart: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2_1)
+        Start: =comecar
         Visible: =false
         Width: =0
         ZIndex: =20
