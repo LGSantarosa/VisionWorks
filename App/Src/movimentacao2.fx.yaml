@@ -1485,8 +1485,8 @@ movimentacao2 As screen:
         Status_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_0"
-            Default: =If(varNovo = true, DataCardValue9.Selected)
-            DisplayMode: =If(varNovo=true,DisplayMode.Disabled,DisplayMode.Edit)
+            Default: =
+            DisplayMode: =Parent.DisplayMode
             DisplayName: |-
                 =DataSourceInfo(
                     [@CONTROLEDEMATERIAIS],
@@ -1524,7 +1524,7 @@ movimentacao2 As screen:
                     =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
                 DefaultSelectedItems: =If(varNovo = true,Choices([@CONTROLEDEMATERIAIS].Status,"Entrada"), Blank())
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =If(varNovo=true,DisplayMode.Disabled,DisplayMode.Edit)
                 Font: =varFonte
                 Height: =70
                 HoverBorderColor: =ColorFade(Color.Black, 20%)
