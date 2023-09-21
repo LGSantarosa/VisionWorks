@@ -38,11 +38,11 @@ movimentacao As screen:
     Timer1 As timer:
         AutoStart: =true
         DisplayMode: =DisplayMode.Disabled
-        Duration: =00001
+        Duration: =10000
         Height: =0
         OnTimerEnd: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
-        OnTimerStart: =
-        Start: =true
+        OnTimerStart: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
+        Start: =comecar
         Visible: =false
         Width: =0
         X: =3
@@ -270,7 +270,7 @@ movimentacao As screen:
             HoverColor: =Self.Color
             HoverFill: =varCorHover
             OnChange: =Reset(Gallery2) & Refresh(ESTOQUEPROJETOS)
-            OnSelect: =Reset(Gallery2) & Refresh(ESTOQUEPROJETOS)
+            OnSelect: =Reset(Gallery2) & Refresh(ESTOQUEPROJETOS) & Set(comecar,true)
             PaddingLeft: =70
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
