@@ -216,6 +216,8 @@ principal As screen:
             )
         OnSelect: |-
             =UpdateContext({VarConfig:true}); 
+            
+            Set(Imag,'Design sem nome (1)')
         PressedBorderColor: =Color.Black
         PressedColor: =
         PressedFill: |-
@@ -894,6 +896,14 @@ principal As screen:
                 Y: =386
                 ZIndex: =12
 
+        Image1 As image:
+            Height: =320
+            Image: ='2_1'
+            Width: =320
+            X: =146
+            Y: =326
+            ZIndex: =18
+
         Temas As group:
             Height: =5
             Width: =5
@@ -946,7 +956,9 @@ principal As screen:
                 Height: =150
                 Image: ='Design sem nome (1)'
                 OnSelect: |-
-                    =UpdateContext({varCor:Color.White}) && UpdateContext({varImg:'Renault Preta'});
+                    =UpdateContext({claro:'1_1'});
+                    
+                    UpdateContext({varCor:Color.White}) && UpdateContext({varImg:'Renault Preta'});
                     
                     UpdateContext({varCorLetra:Color.Black});
                     
