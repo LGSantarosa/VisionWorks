@@ -896,14 +896,6 @@ principal As screen:
                 Y: =386
                 ZIndex: =12
 
-        Image1 As image:
-            Height: =320
-            Image: ='2_1'
-            Width: =320
-            X: =146
-            Y: =326
-            ZIndex: =18
-
         Temas As group:
             Height: =5
             Width: =5
@@ -937,6 +929,7 @@ principal As screen:
                 ZIndex: =14
 
             "'tema daltonico' As image":
+                AccessibleLabel: ="Botão para o tema daltônico"
                 Height: =160
                 Image: ='Design sem nome'
                 OnSelect: |-
@@ -947,12 +940,14 @@ principal As screen:
                     UpdateContext({varCorBTT:ColorValue("#3e77b6")});
                     
                     UpdateContext({varCorHover:ColorFade(ColorValue("#3e77b6"),50%)})
+                TabIndex: =3
                 Width: =163
                 X: =60
                 Y: =80
                 ZIndex: =15
 
             "'tema claro' As image":
+                AccessibleLabel: ="Botão para o tema claro"
                 Height: =150
                 Image: ='Design sem nome (1)'
                 OnSelect: |-
@@ -965,12 +960,14 @@ principal As screen:
                     UpdateContext({varCorBTT:Color.Black});
                     
                     UpdateContext({varCorHover:ColorFade(Color.Black,50%)})
+                TabIndex: =2
                 Width: =150
                 X: =250
                 Y: =90
                 ZIndex: =16
 
             "'tema escuro' As image":
+                AccessibleLabel: ="Botão para o tema escuro"
                 Height: =150
                 Image: ='Design sem nome (2)'
                 OnSelect: |-
@@ -981,6 +978,7 @@ principal As screen:
                     UpdateContext({varCorBTT:Color.White});
                     
                     UpdateContext({varCorHover:ColorFade(Color.Black,50%)})
+                TabIndex: =1
                 Width: =150
                 X: =415
                 Y: =90

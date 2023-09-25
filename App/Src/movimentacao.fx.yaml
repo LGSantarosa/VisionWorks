@@ -449,6 +449,7 @@ movimentacao As screen:
 
         Label3 As label:
             Color: =varCorBTT
+            FocusedBorderThickness: =1
             Font: =varFonte
             FontWeight: =FontWeight.Bold
             Height: =98
