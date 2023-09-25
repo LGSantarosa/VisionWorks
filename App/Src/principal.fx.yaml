@@ -834,7 +834,7 @@ principal As screen:
                 RadiusTopLeft: =15
                 RadiusTopRight: =15
                 Size: =30
-                Text: ="Cores"
+                Text: ="Tema"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =540
                 X: =50
@@ -863,6 +863,7 @@ principal As screen:
                 RadiusTopRight: =100
                 Size: =24
                 Text: =""
+                Visible: =false
                 Width: =100
                 X: =270
                 Y: =105
@@ -889,6 +890,7 @@ principal As screen:
                 RadiusTopRight: =100
                 Size: =24
                 Text: =""
+                Visible: =false
                 Width: =100
                 X: =450
                 Y: =105
@@ -918,6 +920,7 @@ principal As screen:
                 RadiusTopRight: =100
                 Size: =24
                 Text: =""
+                Visible: =false
                 Width: =99
                 X: =78
                 Y: =105
@@ -986,4 +989,52 @@ principal As screen:
             X: =60
             Y: =60
             ZIndex: =10
+
+    Image4 As image:
+        Height: =160
+        Image: ='Design sem nome'
+        OnSelect: |-
+            =UpdateContext({varCor:Color.Yellow}) && UpdateContext({varImg:'Renault Preta'});
+            
+            UpdateContext({varCorLetra:Color.White});
+            
+            UpdateContext({varCorBTT:ColorValue("#3e77b6")});
+            
+            UpdateContext({varCorHover:ColorFade(ColorValue("#3e77b6"),50%)})
+        Width: =163
+        X: =65
+        Y: =80
+        ZIndex: =13
+
+    Image7 As image:
+        Height: =150
+        Image: ='Design sem nome (1)'
+        OnSelect: |-
+            =UpdateContext({varCor:Color.White}) && UpdateContext({varImg:'Renault Preta'});
+            
+            UpdateContext({varCorLetra:Color.Black});
+            
+            UpdateContext({varCorBTT:Color.Black});
+            
+            UpdateContext({varCorHover:ColorFade(Color.Black,50%)})
+        Width: =150
+        X: =255
+        Y: =90
+        ZIndex: =14
+
+    Image9 As image:
+        Height: =150
+        Image: ='Design sem nome (2)'
+        OnSelect: |-
+            =UpdateContext({varCor:Color.Black}) && UpdateContext({varImg:'Renault Branca'});
+            
+            UpdateContext({varCorLetra:Color.Black});
+            
+            UpdateContext({varCorBTT:Color.White});
+            
+            UpdateContext({varCorHover:ColorFade(Color.Black,50%)})
+        Width: =150
+        X: =420
+        Y: =90
+        ZIndex: =15
 
