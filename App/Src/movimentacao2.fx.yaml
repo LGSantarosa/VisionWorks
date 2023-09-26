@@ -2113,6 +2113,7 @@ movimentacao2 As screen:
             OnSelect: |-
                 =If(
                     varVoltar = false,
+                    ResetForm(Form1) & ResetForm(Form5) &
                     Navigate(
                         movimentacao,
                         ScreenTransition.CoverRight
@@ -2123,6 +2124,7 @@ movimentacao2 As screen:
                         varNovo,
                         false
                     ),
+                    ResetForm(Form1) & ResetForm(Form5) &
                     Navigate(
                         'Localizar 2',
                         ScreenTransition.CoverRight
@@ -2135,7 +2137,7 @@ movimentacao2 As screen:
                     ) & Set(
                         varNovo,
                         false
-                    ) & ResetForm(Form1) & ResetForm(Form5)
+                    )
                 )
             TabIndex: =0
             Width: =75

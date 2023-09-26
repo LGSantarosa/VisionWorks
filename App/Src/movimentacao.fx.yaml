@@ -449,8 +449,8 @@ movimentacao As screen:
                 =Navigate(principal,ScreenTransition.UnCoverRight) & Reset(TextSearchBox1_1) & Refresh(ESTOQUEPROJETOS) & Reset(Radio1_1) & UpdateContext({varFiltro:false}) & Set(varCorLetra,Color.Black)
             TabIndex: =0
             Width: =75 + varLetra
-            X: =Label3.X - 95
-            Y: =Label3.Y + 8
+            X: =Label3.X - 90
+            Y: =Label3.Y + 10
             ZIndex: =3
 
         Label3 As label:
