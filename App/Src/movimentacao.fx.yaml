@@ -245,6 +245,9 @@ movimentacao As screen:
                     ) & Notify(
                         "Dados copiados",
                         NotificationType.Information
+                    ) & Set(
+                        varNovo,
+                        false
                     )
                 PaddingBottom: =16
                 PaddingLeft: =16
