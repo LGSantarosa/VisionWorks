@@ -38,7 +38,7 @@ movimentacao As screen:
     Timer1 As timer:
         AutoStart: =true
         DisplayMode: =DisplayMode.Disabled
-        Duration: =10000
+        Duration: =13000
         Height: =0
         OnTimerEnd: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
         OnTimerStart: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
