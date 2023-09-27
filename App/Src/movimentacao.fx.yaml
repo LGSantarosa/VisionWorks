@@ -10,6 +10,7 @@ movimentacao As screen:
             Color.White,
             Color.Black
         )
+    LoadingSpinner: =LoadingSpinner.Data
 
     "'Logo Estoque' As image":
         AccessibleLabel: ="Logo equipe Tooling"
@@ -59,7 +60,7 @@ movimentacao As screen:
 
         "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
             AccessibleLabel: ="Materiais do estoque"
-            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderColor: =RGBA(0, 0, 0, 1)
             ContentLanguage: ="Pesquisa dos materiais"
             DelayItemLoading: =true
             Fill: |-

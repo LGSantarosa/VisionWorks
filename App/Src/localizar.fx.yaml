@@ -107,6 +107,7 @@ localizar As screen:
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
+            LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
             OnSelect: =Set(varImagemProduto,Gallery2_1.Selected) && If(IsBlank(varImagemProduto.Anexo), Notify("Imagem não encontrada", NotificationType.Error),Set(varImagem,true) & Notify("Carregando", NotificationType.Information))
             TabIndex: =0
             TemplateFill: =
