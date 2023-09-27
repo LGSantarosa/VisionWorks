@@ -10,7 +10,6 @@ movimentacao As screen:
             Color.White,
             Color.Black
         )
-    LoadingSpinner: =LoadingSpinner.Data 
 
     "'Logo Estoque' As image":
         AccessibleLabel: ="Logo equipe Tooling"
@@ -44,7 +43,7 @@ movimentacao As screen:
         Duration: =13000
         Height: =0
         OnTimerEnd: =
-        OnTimerStart: =Refresh(ESTOQUEPROJETOS) & Reset(Gallery2)
+        OnTimerStart: =
         Start: =comecar
         Visible: =false
         Width: =0
@@ -91,6 +90,7 @@ movimentacao As screen:
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
+            LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
             NavigationStep: =0
             OnSelect: |-
                 =Set(
