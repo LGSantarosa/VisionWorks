@@ -1629,6 +1629,8 @@ movimentacao2 As screen:
                 DisplayMode: =Parent.DisplayMode
                 Font: =varFonte
                 Height: =70
+                HintText: |-
+                    ="Ex: LUIZ"
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =varCorHover
                 MaxLength: =Parent.MaxLength
