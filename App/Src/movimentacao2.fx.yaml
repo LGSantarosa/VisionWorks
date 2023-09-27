@@ -1994,7 +1994,7 @@ movimentacao2 As screen:
                             2020,
                             01,
                             01
-                        ) Or DataCardValue2.SelectedDate > Now() Or DataCardValue16.Text = "" Or DataCardValue11.Text = "" Or Image3.Image = Blank() Or DataCardValue10.Text = "" Or Value(DataCardValue16.Text) > varProduto.'Quant.',
+                        ) Or DataCardValue2.SelectedDate > Now() Or DataCardValue16.Text = "" Or DataCardValue11.Text = "" Or Image3.Image = Blank() Or DataCardValue10.Text = "",
                         Notify(
                             "Dados Inválidos e imagem necessaria",
                             NotificationType.Error
