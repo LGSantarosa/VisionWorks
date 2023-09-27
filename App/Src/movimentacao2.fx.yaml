@@ -10,6 +10,7 @@ movimentacao2 As screen:
             Color.White,
             Color.Black
         )
+    LoadingSpinner: =LoadingSpinner.Data
 
     Form5 As form:
         DataSource: =CONTROLEDEMATERIAIS

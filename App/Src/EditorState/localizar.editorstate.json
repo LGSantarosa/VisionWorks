@@ -2639,7 +2639,14 @@
         "Width",
         "Size",
         "Orientation",
-        "LoadingSpinner",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "LoadingSpinner.None",
+          "InvariantPropertyName": "LoadingSpinner",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LoadingSpinnerColor",
         {
           "AFDDataSourceName": "",
@@ -3014,7 +3021,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryNextIcon.ID%",
       "Name": "NextArrow5_1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4774,7 +4781,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "Title5_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

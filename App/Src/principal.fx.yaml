@@ -12,6 +12,7 @@ principal As screen:
             Color.Black
         )
     ImagePosition: =ImagePosition.Fill
+    LoadingSpinner: =LoadingSpinner.Data
 
     Label1 As label:
         Align: =Align.Center
@@ -278,10 +279,7 @@ principal As screen:
                 )
             )
         OnSelect: |-
-            =Notify(
-                "Aguarde",
-                NotificationType.Information
-            ) & Set(
+            =Set(
                 varLetra,
                 Slider1.Value
             ) & Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2_1) & Navigate(
@@ -427,10 +425,7 @@ principal As screen:
                 )
             )
         OnSelect: |-
-            =Notify(
-                "Aguarde",
-                NotificationType.Information
-            ) & Set(
+            =Set(
                 varLetra,
                 Slider1.Value
             ) & Refresh(CONTROLEDEMATERIAIS) & Refresh(ESTOQUEPROJETOS) & Reset(Gallery2) & Navigate(

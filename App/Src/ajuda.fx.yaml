@@ -10,6 +10,7 @@ ajuda As screen:
             Color.White,
             Color.Black
         )
+    LoadingSpinner: =LoadingSpinner.Data
 
     Ajuda_1 As button:
         BorderColor: =ColorFade(Color.Black, -15%)

@@ -10,11 +10,12 @@ movimentacao As screen:
             Color.White,
             Color.Black
         )
+    LoadingSpinner: =LoadingSpinner.Data
 
     "'Logo Estoque' As image":
         Height: =210
         Image: =Switch(varCor,Color.Yellow,'MicrosoftTeams-image (2)',Color.White,'MicrosoftTeams-image (2)',Color.Black,'MicrosoftTeams-image (6)','MicrosoftTeams-image (6)')
-        OnSelect: =
+        OnSelect: =movimentacao.LoadingSpinner
         Width: =640
         ZIndex: =11
 
