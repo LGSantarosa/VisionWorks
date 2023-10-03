@@ -62,7 +62,7 @@ localizar As screen:
             TabIndex: =0
             Width: =75 + varLetra
             X: =Label3_3.X - 95
-            Y: =Label3.Y + 8
+            Y: =Label3.Y + 10
             ZIndex: =4
 
         Label3_3 As label:
@@ -74,7 +74,7 @@ localizar As screen:
             Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
             Text: ="Voltar"
             Width: =180
-            X: =103
+            X: =110
             Y: =1018
             ZIndex: =5
 
