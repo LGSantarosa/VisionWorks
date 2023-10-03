@@ -658,37 +658,6 @@
                 Y: =DataCardKey26.Y
                 ZIndex: =4
 
-    Icon7_3 As icon.ChevronLeft:
-        AccessibleLabel: ="Icone para retornar a tela anterior"
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Color: =varCorBTT
-        Height: =75
-        HoverColor: =ColorFade(Self.Color,50%)
-        Icon: =Icon.BackArrow
-        OnSelect: |-
-            =Navigate(
-                localizar,
-                ScreenTransition.CoverRight
-            )
-        TabIndex: =0
-        Width: =75
-        X: =25
-        Y: =1030
-        ZIndex: =2
-
-    Label3_4 As label:
-        Color: =varCorBTT
-        Font: =varFonte
-        FontWeight: =FontWeight.Bold
-        Height: =70
-        OnSelect: =
-        Size: =25 + varLetra
-        Text: ="Voltar"
-        Width: =215
-        X: =105
-        Y: =1030
-        ZIndex: =3
-
     "'Movimentacao Button_1' As button":
         BorderColor: =ColorFade(Color.Black, -15%)
         Color: =varCor
@@ -758,4 +727,42 @@
         X: =320
         Y: =1030
         ZIndex: =7
+
+    Group4_1 As group:
+        Height: =5
+        Width: =5
+        X: =-95
+        Y: =40
+        ZIndex: =10
+
+        Icon7_6 As icon.ChevronLeft:
+            AccessibleLabel: ="Icone para retornar a tela anterior"
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =varCorBTT
+            Height: =75 + varLetra
+            HoverColor: =ColorFade(Self.Color,50%)
+            Icon: =Icon.BackArrow
+            OnSelect: |-
+                =Navigate(
+                    localizar,
+                    ScreenTransition.CoverRight
+                )
+            TabIndex: =0
+            Width: =75 + varLetra
+            X: =Label3.X - 95
+            Y: =Label3.Y + 10
+            ZIndex: =8
+
+        Label3_8 As label:
+            Color: =varCorBTT
+            Font: =varFonte
+            FontWeight: =FontWeight.Bold
+            Height: =98
+            OnSelect: =
+            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
+            Text: ="Voltar"
+            Width: =180
+            X: =110
+            Y: =1018
+            ZIndex: =9
 
