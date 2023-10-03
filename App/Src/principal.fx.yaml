@@ -216,9 +216,11 @@ principal As screen:
                 )
             )
         OnSelect: |-
-            =UpdateContext({VarConfig:true}); 
-            
-            Set(Imag,'Design sem nome (1)')
+            =UpdateContext({VarConfig: true});
+            Set(
+                Imag,
+                'Design sem nome (1)'
+            )
         PressedBorderColor: =Color.Black
         PressedColor: =
         PressedFill: |-
@@ -555,7 +557,17 @@ principal As screen:
 
     "'Logo estoque' As image":
         Height: =230
-        Image: =Switch(varCor,Color.Yellow,'MicrosoftTeams-image (2)',Color.White,'MicrosoftTeams-image (2)',Color.Black,'MicrosoftTeams-image (6)','MicrosoftTeams-image (6)')
+        Image: |-
+            =Switch(
+                varCor,
+                Color.Yellow,
+                'MicrosoftTeams-image (2)',
+                Color.White,
+                'MicrosoftTeams-image (2)',
+                Color.Black,
+                'MicrosoftTeams-image (6)',
+                'MicrosoftTeams-image (6)'
+            )
         Width: =640
         Y: =220
         ZIndex: =8

@@ -2099,19 +2099,19 @@ movimentacao2 As screen:
             Y: =1004
             ZIndex: =4
 
-    Group9 As group:
+    Group11_1 As group:
         Height: =5
         Width: =5
-        X: =40
+        X: =-95
         Y: =40
-        ZIndex: =8
+        ZIndex: =10
 
-        Icon7_1 As icon.ChevronLeft:
+        Icon7_5 As icon.ChevronLeft:
             AccessibleLabel: ="Icone para retornar a tela anterior"
             BorderColor: =RGBA(0, 0, 0, 1)
             Color: =varCorBTT
-            Height: =75
-            HoverColor: =ColorFade(Self.Color, 50%)
+            Height: =75 + varLetra
+            HoverColor: =ColorFade(Self.Color,50%)
             Icon: =Icon.BackArrow
             OnSelect: |-
                 =If(
@@ -2143,21 +2143,23 @@ movimentacao2 As screen:
                     )
                 )
             TabIndex: =0
-            Width: =75
-            X: =25
-            Y: =1030
-            ZIndex: =1
+            Width: =75 + varLetra
+            X: =Label3.X - 95
+            Y: =Label3.Y + 10
+            ZIndex: =8
 
-        Label3_1 As label:
+        Label3_7 As label:
             Color: =varCorBTT
+            FocusedBorderThickness: =1
             Font: =varFonte
             FontWeight: =FontWeight.Bold
-            Height: =96
+            Height: =98
             OnSelect: =
             Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
+            TabIndex: =0
             Text: ="Voltar"
-            Width: =225
-            X: =100
-            Y: =1019
-            ZIndex: =2
+            Width: =180
+            X: =110
+            Y: =1018
+            ZIndex: =9
 

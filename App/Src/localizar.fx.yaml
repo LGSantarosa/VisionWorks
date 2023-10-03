@@ -23,7 +23,17 @@ localizar As screen:
 
     "'Logo Estoque_1' As image":
         Height: =210
-        Image: =Switch(varCor,Color.Yellow,'MicrosoftTeams-image (2)',Color.White,'MicrosoftTeams-image (2)',Color.Black,'MicrosoftTeams-image (6)','MicrosoftTeams-image (6)')
+        Image: |-
+            =Switch(
+                varCor,
+                Color.Yellow,
+                'MicrosoftTeams-image (2)',
+                Color.White,
+                'MicrosoftTeams-image (2)',
+                Color.Black,
+                'MicrosoftTeams-image (6)',
+                'MicrosoftTeams-image (6)'
+            )
         Width: =640
         ZIndex: =10
 
@@ -108,7 +118,24 @@ localizar As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
-            OnSelect: =Set(varImagemProduto,Gallery2_1.Selected) && If(IsBlank(varImagemProduto.Anexo), Notify("Imagem não encontrada", NotificationType.Error),Set(varImagem,true) & Notify("Carregando", NotificationType.Information))
+            OnSelect: |-
+                =Set(
+                    varImagemProduto,
+                    Gallery2_1.Selected
+                ) && If(
+                    IsBlank(varImagemProduto.Anexo),
+                    Notify(
+                        "Imagem não encontrada",
+                        NotificationType.Error
+                    ),
+                    Set(
+                        varImagem,
+                        true
+                    ) & Notify(
+                        "Carregando",
+                        NotificationType.Information
+                    )
+                )
             TabIndex: =0
             TemplateFill: =
             TemplatePadding: =0
@@ -220,8 +247,14 @@ localizar As screen:
                         )
                     )
                 Icon: =Icon.ChevronRight
-                OnSelect: |
-                    =Set(varProduto, Gallery2_1.Selected) & Navigate('Localizar 2', ScreenTransition.Cover)
+                OnSelect: |-
+                    =Set(
+                        varProduto,
+                        Gallery2_1.Selected
+                    ) & Navigate(
+                        'Localizar 2',
+                        ScreenTransition.Cover
+                    )
                 PaddingBottom: =16
                 PaddingLeft: =16
                 PaddingRight: =16
@@ -319,7 +352,12 @@ localizar As screen:
                         50%
                     )
                 )
-            Height: =If(varLetra > 20, 640 ,610)
+            Height: |-
+                =If(
+                    varLetra > 20,
+                    640,
+                    610
+                )
             Visible: =varFiltro
             Width: =270 + Radio1.Size
             X: =370 - Radio1.Size
@@ -332,7 +370,12 @@ localizar As screen:
                 BorderStyle: =BorderStyle.None
                 Color: =Color.Black
                 Font: =varFonte
-                Height: =If(varLetra > 20, 560 ,530)
+                Height: |-
+                    =If(
+                        varLetra > 20,
+                        560,
+                        530
+                    )
                 HoverColor: =ColorFade(Self.Color,30%)
                 Items: =Choices(CONTROLEDEMATERIAIS.Localização)
                 OnSelect: =Reset(Gallery2_1)
@@ -350,7 +393,7 @@ localizar As screen:
             ContentLanguage: ="Barra de pesquisa referente aos materiais"
             Icon: =Icon.Cancel
             OnSelect: |-
-                =UpdateContext({varFiltro:false}) //& Reset(Radio1);;Reset(Radio2)
+                =UpdateContext({varFiltro: false})
             TabIndex: =0
             Visible: =If(varFiltro = true, true, false)
             X: =565

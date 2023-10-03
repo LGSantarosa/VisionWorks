@@ -450,7 +450,13 @@ movimentacao As screen:
             HoverColor: =ColorFade(Self.Color,50%)
             Icon: =Icon.BackArrow
             OnSelect: |-
-                =Navigate(principal,ScreenTransition.UnCoverRight) & Reset(TextSearchBox1_1) & Refresh(ESTOQUEPROJETOS) & Reset(Radio1_1) & UpdateContext({varFiltro:false}) & Set(varCorLetra,Color.Black)
+                =Navigate(
+                    principal,
+                    ScreenTransition.UnCoverRight
+                ) & Reset(TextSearchBox1_1) & Refresh(ESTOQUEPROJETOS) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
+                    varCorLetra,
+                    Color.Black
+                )
             TabIndex: =0
             Width: =75 + varLetra
             X: =Label3.X - 95

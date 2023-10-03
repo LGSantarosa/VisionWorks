@@ -665,7 +665,11 @@
         Height: =75
         HoverColor: =ColorFade(Self.Color,50%)
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(localizar,ScreenTransition.CoverRight)
+        OnSelect: |-
+            =Navigate(
+                localizar,
+                ScreenTransition.CoverRight
+            )
         TabIndex: =0
         Width: =75
         X: =25

@@ -20697,7 +20697,7 @@
       "StyleName": "defaultFormStyle",
       "Type": "ControlInfo"
     },
-    "Group8": {
+    "Group11_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -20715,8 +20715,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group8",
-      "ParentIndex": 7,
+      "Name": "Group11_1",
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20748,7 +20748,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Group9": {
+    "Group8": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -20766,8 +20766,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group9",
-      "ParentIndex": 8,
+      "Name": "Group8",
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21039,7 +21039,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "Icon7_1": {
+    "Icon7_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -21084,7 +21084,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "1036",
+          "AutoRuleBindingString": "1041",
           "InvariantPropertyName": "Y",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -21155,7 +21155,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Icon7_1",
+      "Name": "Icon7_5",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -21812,7 +21812,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Label3_1": {
+    "Label3_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -21863,24 +21863,38 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Align",
-        "VerticalAlign",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
-          "InvariantPropertyName": "X",
+          "InvariantPropertyName": "Align",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Y",
+        "VerticalAlign",
+        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
         "Height",
         "DisplayMode",
         "ZIndex",
         "LineHeight",
         "BorderThickness",
-        "FocusedBorderThickness",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "0",
+          "InvariantPropertyName": "FocusedBorderThickness",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -21903,6 +21917,14 @@
           "InvariantPropertyName": "OnSelect",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "-1",
+          "InvariantPropertyName": "TabIndex",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -21914,8 +21936,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label3_1",
-      "ParentIndex": 4,
+      "Name": "Label3_2",
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22114,6 +22136,11 @@
           "RuleProviderType": "Unknown"
         },
         {
+          "Category": "Design",
+          "PropertyName": "TabIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
           "Category": "Behavior",
           "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
@@ -22122,7 +22149,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Label3_2": {
+    "Label3_7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -22173,16 +22200,16 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
+        "Align",
+        "VerticalAlign",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Align",
+          "InvariantPropertyName": "X",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "VerticalAlign",
-        "X",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -22246,8 +22273,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label3_2",
-      "ParentIndex": 3,
+      "Name": "Label3_7",
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
