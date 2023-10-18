@@ -951,7 +951,7 @@ principal As screen:
             RadiusTopLeft: =15
             RadiusTopRight: =15
             Size: =Sum(25 + varLetra)
-            Text: ="es-BO"
+            Text: ="es-PY"
             Width: =250
             X: =339
             Y: =683
