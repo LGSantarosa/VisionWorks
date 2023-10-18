@@ -903,6 +903,59 @@ principal As screen:
                 Y: =386
                 ZIndex: =12
 
+        Fontes_5 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =ColorFade(Color.Black, -15%)
+            BorderThickness: =0.5
+            Color: =varCorLetra
+            Fill: |-
+                =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
+            Font: =varFonte
+            Height: =If(Slider1.Value<14,120,130 + varLetra)
+            HoverColor: =Color.White
+            HoverFill: |-
+                =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
+            OnSelect: |-
+                =UpdateContext({varCor:Color.Black}) && UpdateContext({varImg:'Renault Branca'}) && UpdateContext({varCorLetra:Color.Black}) && UpdateContext({varCorBTT:Color.White}) && UpdateContext({varCorHover:ColorFade(Color.Black,50%)}) && Reset(Slider1) && Set(varFonte,Font.'Lato Light')
+            PressedColor: =varCorLetra
+            PressedFill: =Self.Fill
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =Sum(25 + varLetra)
+            Text: ="Remover configurações"
+            Width: =250
+            X: =55
+            Y: =683
+            ZIndex: =18
+
+        Fontes_6 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =ColorFade(Color.Black, -15%)
+            BorderThickness: =0.5
+            Color: =varCorLetra
+            Fill: |-
+                =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
+            Font: =varFonte
+            Height: =If(Slider1.Value<14,120,130 + varLetra)
+            HoverColor: =Color.White
+            HoverFill: |-
+                =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
+            OnSelect: =If
+            PressedColor: =varCorLetra
+            PressedFill: =Self.Fill
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =Sum(25 + varLetra)
+            Text: ="Remover configurações"
+            Width: =250
+            X: =339
+            Y: =683
+            ZIndex: =19
+
         Temas As group:
             Height: =5
             Width: =5
