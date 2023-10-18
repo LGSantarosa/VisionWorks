@@ -90,9 +90,6 @@ login As screen:
                 ) & Set(
                     varCorLetra,
                     Color.Black
-                ) & Set(
-                    lingua,
-                    true
                 ),
                 Notify(
                     "Dados incorretos",
