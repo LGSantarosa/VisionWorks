@@ -983,7 +983,7 @@ principal As screen:
                 RadiusTopLeft: =15
                 RadiusTopRight: =15
                 Size: =30
-                Text: =Tema
+                Text: ="Tema"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =540
                 X: =50
