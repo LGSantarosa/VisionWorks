@@ -916,7 +916,7 @@ principal As screen:
             HoverFill: |-
                 =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
             OnSelect: |-
-                =UpdateContext({varCor:Color.Black}) && UpdateContext({varImg:'Renault Branca'}) && UpdateContext({varCorLetra:Color.Black}) && UpdateContext({varCorBTT:Color.White}) && UpdateContext({varCorHover:ColorFade(Color.Black,50%)}) && Reset(Slider1) && Set(varFonte,Font.'Lato Light')
+                =UpdateContext({lingua:true})
             PressedColor: =varCorLetra
             PressedFill: =Self.Fill
             RadiusBottomLeft: =15
@@ -942,7 +942,8 @@ principal As screen:
             HoverColor: =Color.White
             HoverFill: |-
                 =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
-            OnSelect: =If
+            OnSelect: |-
+                =UpdateContext({lingua:false})
             PressedColor: =varCorLetra
             PressedFill: =Self.Fill
             RadiusBottomLeft: =15
