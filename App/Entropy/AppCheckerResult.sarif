@@ -824,36 +824,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "principal.lingua"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "principal.lingua",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "lingua",
-                "module": "principal",
-                "type": "principal"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "principal.varCorHover"
                 }
               ],
