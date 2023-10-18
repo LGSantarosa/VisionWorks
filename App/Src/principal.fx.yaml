@@ -620,7 +620,7 @@ principal As screen:
             RadiusTopLeft: =15
             RadiusTopRight: =15
             Size: =Sum(25 + varLetra)
-            Text: =If(lingua = true, "Fonte", "Fuente")
+            Text: =If(lingua = true, "Fuente", "Fonte")
             Width: =540
             X: =50
             Y: =260
@@ -733,7 +733,7 @@ principal As screen:
             RadiusTopLeft: =15
             RadiusTopRight: =15
             Size: =Sum(25 + varLetra)
-            Text: =If(lingua = true, "Fechar", "Cerrar")
+            Text: =If(lingua = true, "Cerrar", "Fechar")
             Width: =540
             X: =50
             Y: =967
@@ -812,8 +812,7 @@ principal As screen:
             RadiusTopLeft: =15
             RadiusTopRight: =15
             Size: =Sum(25 + varLetra)
-            Text: |
-                =If(lingua = true, "Remover configurações", "Quitar la configuración") 
+            Text: =If(lingua = true, "Quitar la configuración","Remover configurações")
             Width: =540
             X: =51
             Y: =540
