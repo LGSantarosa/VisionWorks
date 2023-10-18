@@ -90,6 +90,9 @@ login As screen:
                 ) & Set(
                     varCorLetra,
                     Color.Black
+                ) & Set(
+                    lingua,
+                    true
                 ),
                 Notify(
                     "Dados incorretos",
@@ -98,9 +101,6 @@ login As screen:
             ) && Set(
                 varLetra,
                 Slider1.Value
-            ) && Set(
-                lingua,
-                true
             )
         PressedBorderColor: =Color.Black
         PressedColor: =
