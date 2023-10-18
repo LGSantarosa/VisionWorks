@@ -79,6 +79,9 @@ login As screen:
                     principal,
                     ScreenTransition.Cover
                 ) & Set(
+                    lingua,
+                    true
+                ) & Set(
                     Start,
                     false
                 ) & Set(

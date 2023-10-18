@@ -170,7 +170,7 @@ principal As screen:
                 Color.White
             )
         Size: =Sum(25 + varLetra)
-        Text: =If(lingua = true, "Ajuda", "Ayuda")
+        Text: =If(lingua = true, "Ayuda", "Ajuda")
         Width: =490
         X: =75
         Y: =800
@@ -235,7 +235,7 @@ principal As screen:
                 Color.White
             )
         Size: =Sum(25 + varLetra)
-        Text: =If(lingua = true, "Configuração", "Ajustes")
+        Text: =If(lingua = true, "Ajustes", "Configurações")
         Width: =490
         X: =75
         Y: =700
@@ -381,7 +381,7 @@ principal As screen:
                 Color.White
             )
         Size: =Sum(25 + varLetra)
-        Text: =If(lingua = true, "Localizar", "Ubicación")
+        Text: =If(lingua = true, "Ubicación","Localizar")
         Width: =490
         X: =75
         Y: =500
@@ -527,7 +527,7 @@ principal As screen:
                 Color.White
             )
         Size: =Sum(25 + varLetra)
-        Text: =If(lingua = true, "Movimentar", "Mover")
+        Text: =If(lingua = true, "Mover", "Movimentar")
         Width: =490
         X: =75
         Y: =600
