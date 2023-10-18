@@ -254,6 +254,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.lingua"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.lingua",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "lingua",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.nouveau_logo_renault_banner"
                 }
               ],
