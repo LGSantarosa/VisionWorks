@@ -73,7 +73,11 @@ login As screen:
         HoverFill: |-
             =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
         OnSelect: |-
-            =If(
+            =Set(
+                varLetra,
+                Slider1.Value
+            ) &&
+            If(
                 TextInput1.Text = "123" && TextInput2.Text = "Tooling",
                 Navigate(
                     principal,
@@ -98,9 +102,6 @@ login As screen:
                     "Dados incorretos",
                     NotificationType.Error
                 )
-            ) && Set(
-                varLetra,
-                Slider1.Value
             )
         PressedBorderColor: =Color.Black
         PressedColor: =
