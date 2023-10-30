@@ -170,7 +170,7 @@ principal As screen:
                 ColorValue("#f8e458"),
                 Color.White
             )
-        Size: =Sum(25 + varLetra)
+        Size: =25 + varLetra
         Text: =If(lingua = true, "Ayuda", "Ajuda")
         Width: =490
         X: =75
@@ -235,7 +235,7 @@ principal As screen:
                 ColorValue("#f8e458"),
                 Color.White
             )
-        Size: =Sum(25 + varLetra)
+        Size: =25 + varLetra
         Text: =If(lingua = true, "Ajustes", "Configurações")
         Width: =490
         X: =75
@@ -381,7 +381,7 @@ principal As screen:
                 ColorValue("#f8e458"),
                 Color.White
             )
-        Size: =Sum(25 + varLetra)
+        Size: =25 + varLetra
         Text: =If(lingua = true, "Ubicación","Localizar")
         Width: =490
         X: =75
@@ -527,7 +527,7 @@ principal As screen:
                 ColorValue("#f8e458"),
                 Color.White
             )
-        Size: =Sum(25 + varLetra)
+        Size: =25 + varLetra
         Text: =If(lingua = true, "Mover", "Movimentar")
         Width: =490
         X: =75
