@@ -216,12 +216,15 @@ principal As screen:
                     50%
                 )
             )
-        OnSelect: |-
+        OnSelect: |
             =UpdateContext({VarConfig: true});
             Set(
                 Imag,
                 'Design sem nome (1)'
-            )
+            ) & Set(
+                varLetra,
+                Slider1.Value
+            );
         PressedBorderColor: =Color.Black
         PressedColor: =
         PressedFill: |-
@@ -620,7 +623,7 @@ principal As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Size: =Sum(25 + varLetra)
+            Size: =25 + varLetra
             Text: =If(lingua = true, "Fuente", "Fonte")
             Width: =540
             X: =50
@@ -733,7 +736,7 @@ principal As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Size: =Sum(25 + varLetra)
+            Size: =25 + varLetra
             Text: =If(lingua = true, "Cerrar", "Fechar")
             Width: =540
             X: =50
@@ -812,7 +815,7 @@ principal As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Size: =Sum(25 + varLetra)
+            Size: =25 + varLetra
             Text: =If(lingua = true, "Quitar la configuración","Remover configurações")
             Width: =540
             X: =51
@@ -912,7 +915,7 @@ principal As screen:
             Fill: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
             Font: =varFonte
-            Height: =If(Slider1.Value<14,120,130 + varLetra)
+            Height: =120
             HoverColor: =Color.White
             HoverFill: |-
                 =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
@@ -924,11 +927,11 @@ principal As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Size: =Sum(25 + varLetra)
+            Size: =25 + varLetra
             Text: ="pt-BR"
             Width: =250
             X: =55
-            Y: =683
+            Y: =If(Slider1.Value<14,683,690 + varLetra)
             ZIndex: =18
 
         Fontes_6 As button:
@@ -939,7 +942,7 @@ principal As screen:
             Fill: |-
                 =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
             Font: =varFonte
-            Height: =If(Slider1.Value<14,120,130 + varLetra)
+            Height: =120
             HoverColor: =Color.White
             HoverFill: |-
                 =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
@@ -951,11 +954,11 @@ principal As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Size: =Sum(25 + varLetra)
+            Size: =25 + varLetra
             Text: ="es-PY"
             Width: =250
             X: =339
-            Y: =683
+            Y: =If(Slider1.Value<14,683,690 + varLetra)
             ZIndex: =19
 
         Temas As group:
