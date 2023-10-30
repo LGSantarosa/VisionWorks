@@ -24,6 +24,21 @@
     "dependents": [],
     "id": "225faf01-38b7-4ed7-90b0-e781b44771a2"
   },
+  "9e8ecccb-38e0-4b53-952b-b4ad41ed7d55": {
+    "connectionRef": {
+      "displayName": "Microsoft Translator V2",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/translatorv2/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_translatorv2",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_translatorv2/connections/f9dcf902bd3f4179a0645a9d13027ac3"
+    },
+    "datasets": {},
+    "dataSources": [
+      "MicrosoftTranslatorV2"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9e8ecccb-38e0-4b53-952b-b4ad41ed7d55"
+  },
   "a04bc8d5-7d32-429a-80e1-2e2d32cf0e14": {
     "connectionRef": {
       "apiTier": "Standard",

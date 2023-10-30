@@ -1,0 +1,85 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-001.azure-apim.net/apim/translatorv2" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="MicrosoftTranslatorV2" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Microsoft Translator V2">O Microsoft Translator permite traduzir textos em diversos idiomas.</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-001.azure-apim.net/apim/translatorv2" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="TextBody_Text_def" />
+      <object name="TextBody">
+        <property name="Text" type="string" />
+      </object>
+      <string name="Language_Code_def" />
+      <string name="Language_Name_def" />
+      <object name="Language">
+        <property name="Code" type="string" />
+        <property name="Name" type="string" />
+      </object>
+      <array typeRef="Language" name="Languages_responses_200_def" />
+      <string name="Translate_responses_200_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-001.azure-apim.net/apim/translatorv2">
+    <resource path="/{connectionId}/Languages">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="Languages" actionName="Languages" visibility="advanced" siena:isDeprecated="false">
+        <doc title="Obter idiomas&#xA;Recupera todos os idiomas com suporte do Microsoft Translator para tradução, transliteração ou escopos de dicionário" />
+        <request>
+          <param style="query" name="scope" type="xs:string" default="translation">
+            <doc title="O escopo dos idiomas com suporte: tradução, transliteração ou dicionário" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Languages_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/Translate">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Translate" actionName="Translate" visibility="important" siena:isDeprecated="false">
+        <doc title="Traduzir texto&#xA;Traduz o texto em um idioma especificado usando o Microsoft Translator." />
+        <request>
+          <param style="query" name="to" type="xs:string" required="true">
+            <doc title="O código do idioma de destino (exemplo: 'fr')." />
+          </param>
+          <param style="query" name="from" type="xs:string">
+            <doc title="O idioma de origem (se não for fornecido, o Microsoft Translator tentará detectar automaticamente) (exemplo: en)." />
+          </param>
+          <param style="query" name="category" type="xs:string">
+            <doc title="A categoria de tradução (padrão: 'geral')." />
+          </param>
+          <param style="query" name="textType" type="xs:string">
+            <doc title="O tipo de texto (padrão: 'plain')." />
+            <option value="plain" />
+            <option value="html" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="Text" path="/Text" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="xs:string" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/Detect">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Detect" actionName="Detect" visibility="important" siena:isDeprecated="false">
+        <doc title="Detectar idioma&#xA;Detecta o idioma de origem do texto especificado." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="Text" path="/Text" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Language" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_translatorv2" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
