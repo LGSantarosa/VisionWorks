@@ -296,6 +296,17 @@ principal As screen:
                 Color.White
             );
             If(
+                lingua = true,
+                Set(
+                    lingua,
+                    true
+                ),
+                Set(
+                    lingua,
+                    false
+                )
+            );
+            If(
                 varCor = Color.Yellow,
                 Set(
                     varCor,
@@ -440,6 +451,17 @@ principal As screen:
             ) & Set(
                 varCorLetra,
                 Color.White
+            );
+            If(
+                lingua = true,
+                Set(
+                    lingua,
+                    true
+                ),
+                Set(
+                    lingua,
+                    false
+                )
             );
             If(
                 varCor = Color.Yellow,

@@ -72,7 +72,7 @@ localizar As screen:
             Height: =98
             OnSelect: =
             Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
-            Text: ="Voltar"
+            Text: =If(lingua = true, "Volver", "Voltar")
             Width: =180
             X: =110
             Y: =1018
