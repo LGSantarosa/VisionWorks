@@ -27,10 +27,6 @@ App As appinfo:
         Set(
             varFonte,
             Font.'Lato Light'
-        );
-        Set(
-            varBusca,
-            CONTROLEDEMATERIAIS.Fabricante
         )
     StartScreen: =login
     Theme: =PowerAppsTheme

@@ -194,36 +194,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varBusca"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varBusca",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varBusca",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.varMedia"
                 }
               ],
