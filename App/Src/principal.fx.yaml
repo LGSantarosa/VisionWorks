@@ -904,7 +904,7 @@ principal As screen:
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Size: =30
+            Size: =30 + varLetra - varLetra/1.7
             Text: ="Idioma"
             VerticalAlign: =VerticalAlign.Top
             Width: =540
