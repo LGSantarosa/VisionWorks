@@ -75,7 +75,7 @@ login As screen:
         OnSelect: |-
             =Set(
                 varLetra,
-                Slider1.Value
+                5
             );
             If(
                 TextInput1.Text = "123" && TextInput2.Text = "Tooling",
@@ -97,9 +97,6 @@ login As screen:
                 ) & Set(
                     varCorLetra,
                     Color.Black
-                ) & Set(
-                    varLetra,
-                    5
                 ),
                 Notify(
                     "Dados incorretos",
