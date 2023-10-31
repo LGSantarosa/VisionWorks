@@ -97,6 +97,9 @@ login As screen:
                 ) & Set(
                     varCorLetra,
                     Color.Black
+                ) & Set(
+                    varLetra,
+                    5
                 ),
                 Notify(
                     "Dados incorretos",
