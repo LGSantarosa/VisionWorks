@@ -877,7 +877,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: ="Localização"
+                Text: =If(lingua = true, "Ubicación", "Localização")
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1044,7 +1044,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: =Parent.DisplayName
+                Text: =If(lingua = true, "Cantidad", "Quant.")
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1137,7 +1137,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: =Parent.DisplayName
+                Text: =If(lingua = true, "Fecha", "Data")
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1234,7 +1234,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: =Parent.DisplayName
+                Text: =If(lingua = true, "Referencia", "Refêrencia")
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1615,7 +1615,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: =Parent.DisplayName
+                Text: =If(lingua = true, "Nombre", "Nome")
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1895,7 +1895,7 @@ movimentacao2 As screen:
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: =Parent.DisplayName
+                Text: =If(lingua = true, "Modelo de materiales", "Modelomaterial")
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -2157,7 +2157,7 @@ movimentacao2 As screen:
             OnSelect: =
             Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
             TabIndex: =0
-            Text: ="Voltar"
+            Text: =If(lingua = true, "Volver", "Voltar")
             Width: =180
             X: =110
             Y: =1018

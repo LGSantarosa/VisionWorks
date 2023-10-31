@@ -275,7 +275,7 @@ movimentacao As screen:
                 =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.White,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
             Font: =varFonte
             Height: =75
-            HintText: ="Encontrar item"
+            HintText: =If(lingua = true, "Encontrar artículo", "Encontrar item")
             HoverBorderColor: =RGBA(149, 149, 149, 1)
             HoverColor: =Self.Color
             HoverFill: =varCorHover
@@ -429,7 +429,7 @@ movimentacao As screen:
             Height: =127
             OnSelect: =
             Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
-            Text: ="Novo item"
+            Text: =If(lingua = true, "Nuevo artículo", "Novo item")
             Width: =252
             X: =283
             Y: =1005
@@ -472,7 +472,7 @@ movimentacao As screen:
             OnSelect: =
             Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
             TabIndex: =0
-            Text: ="Voltar"
+            Text: =If(lingua = true, "Volver", "Voltar")
             Width: =180
             X: =110
             Y: =1018

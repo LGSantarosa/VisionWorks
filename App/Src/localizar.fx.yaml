@@ -287,7 +287,7 @@ localizar As screen:
                 =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.White,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
             Font: =varFonte
             Height: =75
-            HintText: ="Encontrar item"
+            HintText: =If(lingua = true, "Encontrar artículo", "Encontrar item")
             HoverBorderColor: =RGBA(149, 149, 149, 1)
             HoverColor: =Self.Color
             HoverFill: =

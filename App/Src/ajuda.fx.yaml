@@ -79,7 +79,7 @@ ajuda As screen:
                 Color.White
             )
         Size: =Sum(25 + varLetra)
-        Text: ="Enviar"
+        Text: =If(lingua = true, "Mandar","Enviar")
         Width: =490
         X: =75
         Y: =If(varAdd=true,810,710)
@@ -145,7 +145,7 @@ ajuda As screen:
         Height: =70
         OnSelect: =
         Size: =25 + varLetra
-        Text: ="Voltar"
+        Text: =If(lingua = true, "Volver", "Voltar")
         Width: =200
         X: =105
         Y: =1030
@@ -226,7 +226,7 @@ ajuda As screen:
             DisabledFill: =RGBA(0, 0, 0, 0)
             Font: =varFonte
             Height: =177
-            HintText: ="Ajuda com o App"
+            HintText: =If(lingua = true, "Ayuda con la aplicación","Ajuda com o app")
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =varCorLetra
             HoverFill: =
