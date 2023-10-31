@@ -215,7 +215,10 @@ principal As screen:
             ) & Set(
                 varLetra,
                 Slider1.Value
-            );
+            ) & Set(
+                varCorLetra,
+                Color.Black
+            )
         PressedBorderColor: =Color.Black
         PressedColor: =
         PressedFill: |-
