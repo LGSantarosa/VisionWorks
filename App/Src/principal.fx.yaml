@@ -889,7 +889,7 @@ principal As screen:
 
         tema_1 As button:
             BorderColor: =ColorFade(Color.Black,20%)
-            BorderThickness: =5
+            BorderThickness: =0
             Color: =RGBA(0, 0, 0, 1)
             DisabledBorderColor: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(0, 0, 0, 1)
