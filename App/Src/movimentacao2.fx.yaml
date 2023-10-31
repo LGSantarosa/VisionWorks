@@ -2093,7 +2093,7 @@ movimentacao2 As screen:
                 =
             Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 25 + varLetra)
             TabIndex: =0
-            Text: ="Salvar"
+            Text: =If(lingua = true, "Ahorrar", "Salvar")
             Width: =205
             X: =325
             Y: =1004
