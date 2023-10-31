@@ -75,8 +75,8 @@ login As screen:
         OnSelect: |-
             =Set(
                 varLetra,
-                5
-            );
+                Slider1.Value
+            ) & Reset(Slider1);
             If(
                 TextInput1.Text = "123" && TextInput2.Text = "Tooling",
                 Navigate(
