@@ -99,9 +99,6 @@ principal As screen:
                     varCorLetra,
                     Color.White
                 ) & Set(
-                    varImg,
-                    'Renault Preta'
-                ) & Set(
                     varEstoqueLogo,
                     'MicrosoftTeams-image (2)'
                 ),
@@ -122,9 +119,6 @@ principal As screen:
                     ) & Set(
                         varCorLetra,
                         Color.Black
-                    ) & Set(
-                        varImg,
-                        'Renault Preta'
                     ),
                     Set(
                         varEstoqueLogo,
@@ -147,9 +141,6 @@ principal As screen:
                         ) & Set(
                             varCorLetra,
                             Color.Black
-                        ) & Set(
-                            varImg,
-                            'Renault Branca'
                         ) & Set(
                             varEstoqueLogo,
                             'MicrosoftTeams-image (6)'
@@ -324,9 +315,6 @@ principal As screen:
                     varCorLetra,
                     ColorValue("#3b89bd")
                 ) & Set(
-                    varImg,
-                    'Renault Preta'
-                ) & Set(
                     varEstoqueLogo,
                     'MicrosoftTeams-image (2)'
                 ),
@@ -347,9 +335,6 @@ principal As screen:
                     ) & Set(
                         varCorLetra,
                         Color.Black
-                    ) & Set(
-                        varImg,
-                        'Renault Preta'
                     ),
                     Set(
                         varEstoqueLogo,
@@ -372,9 +357,6 @@ principal As screen:
                         ) & Set(
                             varCorLetra,
                             Color.White
-                        ) & Set(
-                            varImg,
-                            'Renault Branca'
                         ) & Set(
                             varEstoqueLogo,
                             'MicrosoftTeams-image (6)'
@@ -481,9 +463,6 @@ principal As screen:
                     varCorLetra,
                     ColorValue("#3b89bd")
                 ) & Set(
-                    varImg,
-                    'Renault Preta'
-                ) & Set(
                     varEstoqueLogo,
                     'MicrosoftTeams-image (2)'
                 ),
@@ -504,9 +483,6 @@ principal As screen:
                     ) & Set(
                         varCorLetra,
                         Color.Black
-                    ) & Set(
-                        varImg,
-                        'Renault Preta'
                     ),
                     Set(
                         varEstoqueLogo,
@@ -529,9 +505,6 @@ principal As screen:
                         ) & Set(
                             varCorLetra,
                             Color.White
-                        ) & Set(
-                            varImg,
-                            'Renault Branca'
                         ) & Set(
                             varEstoqueLogo,
                             'MicrosoftTeams-image (6)'
@@ -659,7 +632,7 @@ principal As screen:
             Height: =100
             HoverFill: =ColorFade(Color.GhostWhite,20%)
             OnSelect: |-
-                =UpdateContext({varCor:Color.White}) && UpdateContext({varImg:'Renault Preta'});
+                =UpdateContext({varCor:Color.White});
                 
                 UpdateContext({varCorLetra:Color.Black});
                 
@@ -687,7 +660,7 @@ principal As screen:
             Height: =100
             HoverFill: =ColorFade(Color.Black,20%)
             OnSelect: |-
-                =UpdateContext({varCor:Color.Black}) && UpdateContext({varImg:'Renault Branca'});
+                =UpdateContext({varCor:Color.Black});
                 
                 UpdateContext({varCorLetra:Color.Black});
                 
@@ -716,7 +689,7 @@ principal As screen:
             Height: =100
             HoverFill: =ColorFade(Color.Yellow ,20%)
             OnSelect: |-
-                =UpdateContext({varCor:Color.Yellow}) && UpdateContext({varImg:'Renault Preta'});
+                =UpdateContext({varCor:Color.Yellow});
                 
                 UpdateContext({varCorLetra:Color.White});
                 
@@ -778,7 +751,7 @@ principal As screen:
             HoverFill: |-
                 =Switch(varCor,Color.Yellow,ColorFade(ColorValue("#3b89bd"),50%),Color.Black,ColorFade(Color.Black,50%),Color.White,ColorFade(ColorValue("#f8e458"),50%),ColorFade(Color.Black,50%))
             OnSelect: |-
-                =UpdateContext({varCor: Color.Black}) && UpdateContext({varImg: 'Renault Branca'}) && UpdateContext({varCorLetra: Color.Black}) && UpdateContext({varCorBTT: Color.White}) && UpdateContext(
+                =UpdateContext({varCor: Color.Black}) && UpdateContext({varCorLetra: Color.Black}) && UpdateContext({varCorBTT: Color.White}) && UpdateContext(
                     {
                         varCorHover: ColorFade(
                             Color.Black,
@@ -890,12 +863,14 @@ principal As screen:
         tema_1 As button:
             BorderColor: =ColorFade(Color.Black,20%)
             BorderThickness: =0
-            Color: =RGBA(0, 0, 0, 1)
+            Color: =varCorLetra
             DisabledBorderColor: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(0, 0, 0, 1)
-            DisabledFill: =RGBA(255, 255, 255, 1)
+            DisabledColor: =varCorLetra
+            DisabledFill: |-
+                =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
             DisplayMode: =DisplayMode.Disabled
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: |-
+                =Switch(varCor,Color.Yellow,ColorValue("#3b89bd"),Color.Black,Color.White,Color.White,ColorValue("#f8e458"),Color.White)
             Font: =varFonte
             Height: =200
             HoverBorderColor: =ColorFade(Self.BorderColor, 100%)
@@ -912,21 +887,25 @@ principal As screen:
             Y: =If(Slider1.Value<14,690,700 + varLetra)
             ZIndex: =16
 
-        Image1 As image:
+        Paraguay As image:
+            AccessibleLabel: ="Icone bandeira Paraguay, caso clique, alterará o idioma do app para espanhol"
             Height: =180
             Image: ='197376'
             OnSelect: |-
                 =UpdateContext({lingua:true})
+            TabIndex: =3
             Width: =180
             X: =387
             Y: =If(Slider1.Value<14,700,710 + varLetra)
             ZIndex: =17
 
-        Image2 As image:
+        Brasil As image:
+            AccessibleLabel: ="Icone bandeira Brasil, caso clique, alterará o idioma do app para portugues"
             Height: =180
             Image: ='186203'
             OnSelect: |-
                 =UpdateContext({lingua:false})
+            TabIndex: =5
             Width: =180
             X: =70
             Y: =If(Slider1.Value<14,700,710 + varLetra)
@@ -957,6 +936,7 @@ principal As screen:
                 RadiusTopLeft: =15
                 RadiusTopRight: =15
                 Size: =30
+                TabIndex: =2
                 Text: ="Tema"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =540
@@ -969,14 +949,14 @@ principal As screen:
                 Height: =160
                 Image: ='Design sem nome'
                 OnSelect: |-
-                    =UpdateContext({varCor:Color.Yellow}) && UpdateContext({varImg:'Renault Preta'});
+                    =UpdateContext({varCor:Color.Yellow});
                     
                     UpdateContext({varCorLetra:Color.White});
                     
                     UpdateContext({varCorBTT:ColorValue("#3e77b6")});
                     
                     UpdateContext({varCorHover:ColorFade(ColorValue("#3e77b6"),50%)})
-                TabIndex: =3
+                TabIndex: =7
                 Width: =163
                 X: =60
                 Y: =80
@@ -987,16 +967,14 @@ principal As screen:
                 Height: =150
                 Image: ='Design sem nome (1)'
                 OnSelect: |-
-                    =UpdateContext({claro:'1_1'});
-                    
-                    UpdateContext({varCor:Color.White}) && UpdateContext({varImg:'Renault Preta'});
+                    =UpdateContext({varCor:Color.White});
                     
                     UpdateContext({varCorLetra:Color.Black});
                     
                     UpdateContext({varCorBTT:Color.Black});
                     
                     UpdateContext({varCorHover:ColorFade(Color.Black,50%)})
-                TabIndex: =2
+                TabIndex: =1
                 Width: =150
                 X: =250
                 Y: =90
@@ -1007,14 +985,14 @@ principal As screen:
                 Height: =150
                 Image: ='Design sem nome (2)'
                 OnSelect: |-
-                    =UpdateContext({varCor:Color.Black}) && UpdateContext({varImg:'Renault Branca'});
+                    =UpdateContext({varCor:Color.Black});
                     
                     UpdateContext({varCorLetra:Color.Black});
                     
                     UpdateContext({varCorBTT:Color.White});
                     
                     UpdateContext({varCorHover:ColorFade(Color.Black,50%)})
-                TabIndex: =1
+                TabIndex: =2
                 Width: =150
                 X: =415
                 Y: =90
