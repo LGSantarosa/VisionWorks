@@ -1321,7 +1321,7 @@ movimentacao2 As screen:
                 Height: =48
                 HoverColor: =varCorLetra
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: =If(lingua = true, "Adjunto", "Anexo")
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
