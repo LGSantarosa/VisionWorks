@@ -207,8 +207,9 @@ principal As screen:
                     50%
                 )
             )
-        OnSelect: |
+        OnSelect: |-
             =UpdateContext({VarConfig: true});
+            UpdateContext({varCorLetra: Color.Black});
             Set(
                 Imag,
                 'Design sem nome (1)'
@@ -864,6 +865,7 @@ principal As screen:
                 ZIndex: =10
 
         tema_1 As button:
+            AutoDisableOnSelect: =false
             BorderColor: =ColorFade(Color.Black,20%)
             BorderThickness: =0
             Color: =varCorLetra
