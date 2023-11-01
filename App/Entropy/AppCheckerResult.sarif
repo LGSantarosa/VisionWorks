@@ -194,17 +194,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varEstoqueLogo"
+                  "fullyQualifiedName": "App.varMedia"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varEstoqueLogo",
+                  "fullyQualifiedName": "App.varMedia",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varEstoqueLogo",
+                "member": "varMedia",
                 "module": "App",
                 "type": "App"
               }
@@ -224,17 +224,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varMedia"
+                  "fullyQualifiedName": "App.varEstoqueLogo"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varMedia",
+                  "fullyQualifiedName": "App.varEstoqueLogo",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varMedia",
+                "member": "varEstoqueLogo",
                 "module": "App",
                 "type": "App"
               }
