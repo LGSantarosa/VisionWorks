@@ -892,18 +892,6 @@ principal As screen:
             Y: =If(Slider1.Value<14,690,700 + varLetra)
             ZIndex: =16
 
-        Paraguay As image:
-            AccessibleLabel: ="Icone bandeira Paraguay, caso clique, alterará o idioma do app para espanhol"
-            Height: =180
-            Image: ='197376'
-            OnSelect: |-
-                =UpdateContext({lingua:true})
-            TabIndex: =3
-            Width: =180
-            X: =387
-            Y: =If(Slider1.Value<14,700,710 + varLetra)
-            ZIndex: =17
-
         Brasil As image:
             AccessibleLabel: ="Icone bandeira Brasil, caso clique, alterará o idioma do app para portugues"
             Height: =180
@@ -915,6 +903,17 @@ principal As screen:
             X: =70
             Y: =If(Slider1.Value<14,700,710 + varLetra)
             ZIndex: =18
+
+        Argentina As image:
+            AccessibleLabel: ="Bandeira da Argentina, caso clique, mudará o idioma do app para espanhol"
+            Height: =180
+            Image: ='197573'
+            OnSelect: |-
+                =UpdateContext({lingua:true})
+            Width: =180
+            X: =387
+            Y: =If(Slider1.Value<14,700,710 + varLetra)
+            ZIndex: =19
 
         Temas As group:
             Height: =5
