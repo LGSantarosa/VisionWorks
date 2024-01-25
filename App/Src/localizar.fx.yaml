@@ -37,47 +37,6 @@ localizar As screen:
         Width: =640
         ZIndex: =10
 
-    Group4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =17
-
-        Icon7_2 As icon.ChevronLeft:
-            AccessibleLabel: ="Icone para retornar a tela anterior"
-            BorderColor: =RGBA(0, 0, 0, 1)
-            Color: =varCorBTT
-            Height: =75 + varLetra
-            HoverColor: =ColorFade(Self.Color,50%)
-            Icon: =Icon.BackArrow
-            OnSelect: |-
-                =Navigate(
-                    principal,
-                    ScreenTransition.UnCoverRight
-                ) & Reset(TextSearchBox1_2) & Refresh(CONTROLEDEMATERIAIS) & Reset(Radio1) & UpdateContext({varFiltro: false}) & Set(
-                    varCorLetra,
-                    Color.Black
-                ) & Reset(TextSearchBox1_2)
-            TabIndex: =0
-            Width: =75 + varLetra
-            X: =Label3_3.X - 95
-            Y: =Label3.Y + 10
-            ZIndex: =4
-
-        Label3_3 As label:
-            Color: =varCorBTT
-            Font: =varFonte
-            FontWeight: =FontWeight.Bold
-            Height: =98
-            OnSelect: =
-            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
-            Text: =If(lingua = true, "Volver", "Voltar")
-            Width: =180
-            X: =110
-            Y: =1018
-            ZIndex: =5
-
     Group7 As group:
         Height: =5
         Width: =5
@@ -412,6 +371,47 @@ localizar As screen:
             X: =If(varLetra > 20, 350,365)
             Y: =220
             ZIndex: =16
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =17
+
+        Icon7_2 As icon.ChevronLeft:
+            AccessibleLabel: ="Icone para retornar a tela anterior"
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =varCorBTT
+            Height: =75 + varLetra
+            HoverColor: =ColorFade(Self.Color,50%)
+            Icon: =Icon.BackArrow
+            OnSelect: |-
+                =Navigate(
+                    principal,
+                    ScreenTransition.UnCoverRight
+                ) & Reset(TextSearchBox1_2) & Refresh(CONTROLEDEMATERIAIS) & Reset(Radio1) & UpdateContext({varFiltro: false}) & Set(
+                    varCorLetra,
+                    Color.Black
+                ) & Reset(TextSearchBox1_2)
+            TabIndex: =0
+            Width: =75 + varLetra
+            X: =Label3_3.X - 95
+            Y: =Label3.Y + 10
+            ZIndex: =4
+
+        Label3_3 As label:
+            Color: =varCorBTT
+            Font: =varFonte
+            FontWeight: =FontWeight.Bold
+            Height: =98
+            OnSelect: =
+            Size: =If(varFonte = Font.'Open Sans', 15 + varLetra, 23 + varLetra)
+            Text: =If(lingua = true, "Volver", "Voltar")
+            Width: =180
+            X: =110
+            Y: =1018
+            ZIndex: =5
 
     Container1 As groupContainer:
         Fill: =RGBA(0, 0, 0, 0.75)

@@ -42,7 +42,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Acessivel",
-      "ParentIndex": 1,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -309,6 +310,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Ajuda",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -590,7 +592,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Argentina",
-      "ParentIndex": 3,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -771,7 +774,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Aumentar fonte",
-      "ParentIndex": 18,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -898,7 +902,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Brasil",
-      "ParentIndex": 2,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1229,7 +1234,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "color_amarelo",
-      "ParentIndex": 8,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1590,7 +1596,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "color_branco",
-      "ParentIndex": 9,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1944,7 +1951,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "color_preto",
-      "ParentIndex": 10,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2296,6 +2304,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Configuracao",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2681,6 +2690,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Fechar",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3071,7 +3081,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Fontes",
-      "ParentIndex": 11,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3461,7 +3472,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Fontes_3",
-      "ParentIndex": 13,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3851,7 +3863,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Fontes_4",
-      "ParentIndex": 16,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4062,6 +4075,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4113,6 +4127,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group5",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4248,7 +4263,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon5",
-      "ParentIndex": 2,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4494,6 +4510,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon5_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4771,7 +4788,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1",
-      "ParentIndex": 0,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5066,7 +5084,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4",
-      "ParentIndex": 15,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5356,7 +5375,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_1",
-      "ParentIndex": 12,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5720,6 +5740,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Localizar Button",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5971,6 +5992,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Logo estoque",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6278,6 +6300,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Movimentacao Button",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6517,6 +6540,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PopUp_acessibilidade",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6653,6 +6677,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "principal",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6858,7 +6883,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Slider1",
-      "ParentIndex": 14,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7229,7 +7255,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tema",
-      "ParentIndex": 4,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7516,7 +7543,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tema claro",
-      "ParentIndex": 6,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7779,7 +7807,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tema daltonico",
-      "ParentIndex": 5,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8053,7 +8082,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tema escuro",
-      "ParentIndex": 7,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8439,7 +8469,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "tema_1",
-      "ParentIndex": 1,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8650,7 +8681,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Temas",
-      "ParentIndex": 20,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8773,6 +8805,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Timer2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -9064,6 +9097,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Tooling Logo",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [

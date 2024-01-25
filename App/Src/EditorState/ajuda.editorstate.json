@@ -110,7 +110,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AddArquivo",
-      "ParentIndex": 4,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -451,7 +452,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "%AddMedia.ID%",
       "Name": "AddMediaButton1",
-      "ParentIndex": 5,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -673,6 +675,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ajuda",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -875,6 +878,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Ajuda_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1081,6 +1085,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1230,6 +1235,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon7_4",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1477,6 +1483,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1748,7 +1755,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Logo estoque_1",
-      "ParentIndex": 6,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2080,7 +2088,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput3",
-      "ParentIndex": 3,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2509,6 +2518,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput3_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2795,6 +2805,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Tooling Logo_4",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3083,6 +3094,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%Image.ID%",
       "Name": "UploadedImage1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
