@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-06-06T16:15:12.3340000Z",
+      "LastChangedTimeString": "2024-01-30T17:56:25.6110000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -38,6 +38,10 @@
       "ModeloMaterial": "Modelo Material",
       "Modified": "Modificado",
       "OData__ColorTag": "Pressione Delete para excluir o ícone.",
+      "Projeto": "Projeto",
+      "Projeto#Id": "Projeto Id (Projeto#Id)",
+      "Projeto0": "Projeto (Projeto0)",
+      "Projeto0#Id": "Projeto Id (Projeto0#Id)",
       "Quant_x002e_": "Quant.",
       "Refer_x00ea_ncia": "Referência",
       "Title": "Título"

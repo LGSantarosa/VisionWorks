@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-09-18T16:51:52.6860000Z",
+      "LastChangedTimeString": "2024-01-30T17:56:25.6110000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -44,6 +44,10 @@
       "ID": "ID",
       "Modified": "Modificado",
       "OData__ColorTag": "Pressione Delete para excluir o ícone.",
+      "Projeto": "Projeto",
+      "Projeto#Id": "Projeto Id (Projeto#Id)",
+      "Projeto0": "Projeto (Projeto0)",
+      "Projeto0#Id": "Projeto Id (Projeto0#Id)",
       "Title": "Material"
     },
     "DatasetName": "https://grouperenault.sharepoint.com/sites/Remanejo",
