@@ -97,6 +97,77 @@ movimentacao2 As screen:
                 Y: =DataCardKey21.Y
                 ZIndex: =4
 
+        Projeto_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Projeto"
+            Default: =DataCardValue4.Selected
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@CONTROLEDEMATERIAIS],DataSourceInfo.DisplayName,"Projeto")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue4.Selected
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: =Choices([@CONTROLEDEMATERIAIS].Projeto)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(CONTROLEDEMATERIAIS.Projeto,DataCardValue5.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+            ErrorMessage20 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible20 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
         Localização_DataCard4 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_11"
@@ -1190,7 +1261,7 @@ movimentacao2 As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Projeto"
-            Default: =ThisItem.Projeto
+            Default: =varProduto.Projeto
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"Projeto")
             Fill: =RGBA(0, 0, 0, 0)
@@ -1216,6 +1287,7 @@ movimentacao2 As screen:
                 ZIndex: =1
 
             DataCardValue4 As combobox:
+                AccessibleLabel: ="Projeto do material"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 ChevronBackground: |-
                     =Switch(
@@ -1251,6 +1323,7 @@ movimentacao2 As screen:
                             50%
                         )
                     )
+                Default: =varProduto.Projeto
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -1258,6 +1331,7 @@ movimentacao2 As screen:
                 Height: =70
                 HoverColor: =ColorFade(Self.Color,20%)
                 HoverFill: =varCorHover
+                IsSearchable: =false
                 Items: =Choices([@ESTOQUEPROJETOS].Projeto)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedFill: |-
@@ -1284,7 +1358,7 @@ movimentacao2 As screen:
                         )
                     )
                 SearchFields: =["Value"]
-                SearchItems: =Choices(ESTOQUEPROJETOS.Projeto,DataCardValue4.SearchText)
+                SearchItems: =[]
                 SelectionFill: =varCorHover
                 SelectMultiple: =false
                 Size: =21 + varLetra
