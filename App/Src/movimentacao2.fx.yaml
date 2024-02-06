@@ -1332,7 +1332,7 @@ movimentacao2 As screen:
                 HoverColor: =ColorFade(Self.Color,20%)
                 HoverFill: =varCorHover
                 IsSearchable: =false
-                Items: =Choices([@ESTOQUEPROJETOS].Projeto)
+                Items: =Choices([@CONTROLEDEMATERIAIS].Projeto)
                 OnChange: =
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedFill: |-
