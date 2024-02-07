@@ -1447,58 +1447,76 @@ movimentacao2 As screen:
                 Y: =DataCardKey7.Y
                 ZIndex: =4
 
-        "'Nota Fiscal_DataCard1' As typedDataCard.textualEditCard":
+        Anexos_DataCard1 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="NotaFiscal"
-            Default: =varProduto.'Nota Fiscal'
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Anexos
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"NotaFiscal")
+            DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@ESTOQUEPROJETOS], DataSourceInfo.MaxLength, "NotaFiscal")
             Required: =false
-            Update: =DataCardValue8.Text
+            Update: =DataCardValue18.Attachments
             Width: =640
             X: =0
-            Y: =5
+            Y: =12
             ZIndex: =1
 
-            DataCardKey9 As label:
+            DataCardKey14 As label:
                 AutoHeight: =true
                 Color: =varCorLetra
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: =Parent.DisplayName
+                Text: ="Nota Fiscal PDF"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue8 As text:
+            DataCardValue18 As attachments:
                 BorderColor: =Color.Black
-                Default: =Parent.Default
-                DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Font: =varFonte
-                Height: =70
-                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                Height: =240
                 HoverFill: =varCorHover
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =21 + varLetra
+                IsInDataCard: =true
+                Items: =Parent.Default
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedFill: |-
+                    =Switch(
+                        varCor,
+                        Color.Yellow,
+                        ColorFade(
+                            ColorValue("#3b89bd"),
+                            50%
+                        ),
+                        Color.Black,
+                        ColorFade(
+                            Color.Black,
+                            90%
+                        ),
+                        Color.White,
+                        ColorFade(
+                            ColorValue("#f8e458"),
+                            50%
+                        ),
+                        ColorFade(
+                            Color.Black,
+                            90%
+                        )
+                    )
+                Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                 ZIndex: =2
 
-            ErrorMessage24 As label:
+            ErrorMessage35 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -1511,18 +1529,18 @@ movimentacao2 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue8.Y + DataCardValue8.Height
+                Y: =DataCardValue18.Y + DataCardValue18.Height
                 ZIndex: =3
 
-            StarVisible24 As label:
+            StarVisible35 As label:
                 Align: =Align.Center
-                Height: =DataCardKey9.Height
+                Height: =DataCardKey14.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey9.Y
+                Y: =DataCardKey14.Y
                 ZIndex: =4
 
         "'Quant._DataCard2' As typedDataCard.numberEditCard":
@@ -1544,7 +1562,7 @@ movimentacao2 As screen:
                 )
             Width: =640
             X: =0
-            Y: =6
+            Y: =5
             ZIndex: =1
 
             DataCardKey18 As label:
@@ -1654,7 +1672,7 @@ movimentacao2 As screen:
             Update: =DataCardValue1.Text
             Width: =640
             X: =0
-            Y: =10
+            Y: =9
             ZIndex: =1
 
             DataCardKey1 As label:
@@ -1729,6 +1747,85 @@ movimentacao2 As screen:
                 Y: =DataCardKey1.Y
                 ZIndex: =4
 
+        "'Nota Fiscal_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NotaFiscal"
+            Default: =varProduto.'Nota Fiscal'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"NotaFiscal")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ESTOQUEPROJETOS], DataSourceInfo.MaxLength, "NotaFiscal")
+            Required: =false
+            Update: =DataCardValue8.Text
+            Width: =640
+            X: =0
+            Y: =11
+            ZIndex: =1
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Color: =varCorLetra
+                Font: =varFonte
+                Height: =48
+                Size: =21 + varLetra
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8 As text:
+                BorderColor: =Color.Black
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =varFonte
+                Height: =70
+                HintText: ="Numero da nota"
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =varCorHover
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21 + varLetra
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                ZIndex: =2
+
+            ErrorMessage24 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue8.Y + DataCardValue8.Height
+                ZIndex: =3
+
+            StarVisible24 As label:
+                Align: =Align.Center
+                Height: =DataCardKey9.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey9.Y
+                ZIndex: =4
+
         Anexo_DataCard1 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Anexo"
@@ -1741,15 +1838,16 @@ movimentacao2 As screen:
             Update: =Image3.Image
             Width: =640
             X: =0
-            Y: =12
+            Y: =13
             ZIndex: =1
 
             DataCardKey4 As label:
                 AutoHeight: =true
                 Color: =varCorLetra
+                Font: =varFonte
                 Height: =48
                 HoverColor: =varCorLetra
-                Size: =21
+                Size: =21 + varLetra
                 Text: =If(lingua = true, "Adjunto", "Anexo")
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2024,7 +2122,7 @@ movimentacao2 As screen:
             Update: =DataCardValue10.Text
             Width: =640
             X: =0
-            Y: =7
+            Y: =6
             ZIndex: =9
 
             DataCardKey12 As label:
@@ -2126,7 +2224,7 @@ movimentacao2 As screen:
             Update: =DataCardValue13.Text
             Width: =640
             X: =0
-            Y: =8
+            Y: =7
             ZIndex: =9
 
             DataCardKey15 As label:
@@ -2227,7 +2325,7 @@ movimentacao2 As screen:
             Update: =DataCardValue15.Text
             Width: =640
             X: =0
-            Y: =9
+            Y: =8
             ZIndex: =9
 
             DataCardKey17 As label:
@@ -2315,7 +2413,7 @@ movimentacao2 As screen:
             Update: =DataCardValue14.Text
             Width: =640
             X: =0
-            Y: =11
+            Y: =10
             ZIndex: =9
 
             DataCardKey16 As label:
