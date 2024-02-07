@@ -306,7 +306,7 @@
 
             DataCardValue27 As attachments:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DisplayMode: =DisplayMode.Disabled
+                DisplayMode: =DisplayMode.View
                 Height: =156
                 IsInDataCard: =true
                 Items: =Parent.Default
