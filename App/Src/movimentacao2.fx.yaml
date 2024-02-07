@@ -1448,6 +1448,7 @@ movimentacao2 As screen:
                 ZIndex: =4
 
         Anexos_DataCard1 As typedDataCard.attachmentsEditCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
             Default: =varProduto.Anexos
@@ -2035,6 +2036,7 @@ movimentacao2 As screen:
                 Color: =varCorLetra
                 Font: =varFonte
                 Height: =48
+                OnSelect: =
                 Size: =21 + varLetra
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
