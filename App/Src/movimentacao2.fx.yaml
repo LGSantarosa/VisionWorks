@@ -1684,7 +1684,16 @@ movimentacao2 As screen:
                 BorderColor: =Color.Black
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: |-
+                    =If(
+                        Form1.Mode = FormMode.New,
+                        DisplayMode.Edit,
+                        If(
+                            varProduto.MABEC = Blank(),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        )
+                    )
                 Font: =varFonte
                 Height: =70
                 HintText: ="Numero da nota"
@@ -1761,7 +1770,16 @@ movimentacao2 As screen:
 
             DataCardValue18 As attachments:
                 BorderColor: =Color.Black
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: |-
+                    =If(
+                        Form1.Mode = FormMode.New,
+                        DisplayMode.Edit,
+                        If(
+                            varProduto.MABEC = Blank(),
+                            DisplayMode.Edit,
+                            DisplayMode.Disabled
+                        )
+                    )
                 Height: =183
                 HoverFill: =varCorHover
                 IsInDataCard: =true
