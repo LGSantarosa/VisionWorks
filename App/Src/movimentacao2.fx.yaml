@@ -1768,7 +1768,10 @@ movimentacao2 As screen:
                 ItemFill: =varCor
                 ItemHoverFill: =varCorHover
                 Items: =Parent.Default
-                MaxAttachments: =1
+                MaxAttachments: =1 + maximo
+                OnAddFile: =Set(maximo,-1)
+                OnRemoveFile: =Set(maximo,1)
+                OnUndoRemoveFile: =Set(maximo,-1)
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
