@@ -71,6 +71,9 @@ localizar As screen:
                     ) || StartsWith(
                         'Modelo Material',
                         TextSearchBox1_2.Text
+                    ) || StartsWith(
+                        'Nota Fiscal',
+                        TextSearchBox1_2.Text
                     ),
                     (Localização.Value = Radio1.Selected.Value Or Radio1.Selected.Value = Blank())
                 )

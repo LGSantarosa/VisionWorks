@@ -86,6 +86,9 @@ movimentacao As screen:
                     ) || StartsWith(
                         'Modelo Material',
                         TextSearchBox1_1.Text
+                    ) || StartsWith(
+                        'Nota Fiscal',
+                        TextSearchBox1_1.Text
                     ),
                     (Localização.Value = Radio1_1.Selected.Value Or Radio1_1.Selected.Value = Blank())
                 )
