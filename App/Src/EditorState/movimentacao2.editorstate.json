@@ -12209,9 +12209,23 @@
           "IsLockable": true,
           "NameMapSourceSchema": "?"
         },
-        "ItemFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(56, 96, 178, 1)",
+          "InvariantPropertyName": "ItemFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ItemColor",
-        "ItemHoverFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(186, 202, 226, 1)",
+          "InvariantPropertyName": "ItemHoverFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ItemHoverColor",
         "ItemPressedFill",
         "ItemPressedColor",

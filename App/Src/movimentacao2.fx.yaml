@@ -1482,6 +1482,8 @@ movimentacao2 As screen:
                 Height: =183
                 HoverFill: =varCorHover
                 IsInDataCard: =true
+                ItemFill: =varCor
+                ItemHoverFill: =varCorHover
                 Items: =Parent.Default
                 MaxAttachments: =1
                 PaddingBottom: =5
