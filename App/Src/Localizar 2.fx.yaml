@@ -206,7 +206,7 @@
         Projeto_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Projeto0"
-            Default: =varProduto
+            Default: =varProduto.'Projeto (Projeto0)'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"Projeto0")
             Fill: =RGBA(0, 0, 0, 0)
@@ -279,7 +279,7 @@
         Anexos_DataCard2 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
-            Default: =ThisItem.Anexos
+            Default: =First(varProduto.Anexos)
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
