@@ -597,7 +597,7 @@
                 Font: =varFonte
                 Height: =48
                 Size: =21 + varLetra
-                Text: =If(lingua = true, "Modelo de materiales", "Modelomaterial")
+                Text: =If(lingua = true, "Modelo de materiales", "Modelo material")
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
