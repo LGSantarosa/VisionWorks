@@ -207,6 +207,9 @@ movimentacao As screen:
                     ) & Set(
                         varNovo,
                         false
+                    ) & Set(
+                        maximo,
+                        1
                     )
                 PaddingBottom: =16
                 PaddingLeft: =16
@@ -417,6 +420,9 @@ movimentacao As screen:
                 ) & Set(
                     varNovo,
                     true
+                ) & Set(
+                    maximo,
+                    1
                 )
             TabIndex: =0
             Width: =75 + varLetra
