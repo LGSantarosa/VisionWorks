@@ -2520,7 +2520,7 @@ movimentacao2 As screen:
                 =If(
                     DataCardValue9.Selected.Value = "Entrada",
                     If(
-                        DataCardValue17.Selected.Value = Blank() Or DataCardValue6.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
+                        DataCardValue17.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
                             2020,
                             01,
                             01
@@ -2563,7 +2563,7 @@ movimentacao2 As screen:
                         )
                     ),
                     If(
-                        DataCardValue17.Selected.Value = Blank() Or DataCardValue6.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
+                        DataCardValue17.Selected.Value = Blank() Or DataCardValue9.Selected.Value = Blank() Or DataCardValue2.SelectedDate <= Date(
                             2020,
                             01,
                             01
