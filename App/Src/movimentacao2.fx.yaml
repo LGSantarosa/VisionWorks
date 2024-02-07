@@ -1734,7 +1734,7 @@ movimentacao2 As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
-            Default: =varProduto.Anexos
+            Default: =First(varProduto.Anexos)
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
