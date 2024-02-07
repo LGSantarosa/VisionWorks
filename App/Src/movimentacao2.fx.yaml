@@ -1482,7 +1482,8 @@ movimentacao2 As screen:
                 Height: =183
                 HoverFill: =varCorHover
                 IsInDataCard: =true
-                Items: =Parent.Default
+                Items: =varProduto.Anexos
+                MaxAttachments: =1
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
