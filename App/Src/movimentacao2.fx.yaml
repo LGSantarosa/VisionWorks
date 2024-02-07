@@ -1447,106 +1447,6 @@ movimentacao2 As screen:
                 Y: =DataCardKey7.Y
                 ZIndex: =4
 
-        Anexos_DataCard1 As typedDataCard.attachmentsEditCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="{Attachments}"
-            Default: =varProduto.Anexos
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"{Attachments}")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue18.Attachments
-            Width: =640
-            X: =0
-            Y: =12
-            ZIndex: =1
-
-            DataCardKey14 As label:
-                AutoHeight: =true
-                Color: =varCorLetra
-                Font: =varFonte
-                Height: =48
-                Size: =21 + varLetra
-                Text: ="Nota Fiscal PDF"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue18 As attachments:
-                BorderColor: =Color.Black
-                DisplayMode: =Parent.DisplayMode
-                Height: =183
-                HoverFill: =varCorHover
-                IsInDataCard: =true
-                ItemFill: =varCor
-                ItemHoverFill: =varCorHover
-                Items: =Parent.Default
-                MaxAttachments: =1
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                PressedFill: |-
-                    =Switch(
-                        varCor,
-                        Color.Yellow,
-                        ColorFade(
-                            ColorValue("#3b89bd"),
-                            50%
-                        ),
-                        Color.Black,
-                        ColorFade(
-                            Color.Black,
-                            90%
-                        ),
-                        Color.White,
-                        ColorFade(
-                            ColorValue("#f8e458"),
-                            50%
-                        ),
-                        ColorFade(
-                            Color.Black,
-                            90%
-                        )
-                    )
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
-                ZIndex: =2
-
-            ErrorMessage35 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue18.Y + DataCardValue18.Height
-                ZIndex: =3
-
-            StarVisible35 As label:
-                Align: =Align.Center
-                Height: =DataCardKey14.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey14.Y
-                ZIndex: =4
-
         "'Quant._DataCard2' As typedDataCard.numberEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Quant_x002e_"
@@ -1830,12 +1730,112 @@ movimentacao2 As screen:
                 Y: =DataCardKey9.Y
                 ZIndex: =4
 
+        Anexos_DataCard1 As typedDataCard.attachmentsEditCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =varProduto.Anexos
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue18.Attachments
+            Width: =640
+            X: =0
+            Y: =12
+            ZIndex: =1
+
+            DataCardKey14 As label:
+                AutoHeight: =true
+                Color: =varCorLetra
+                Font: =varFonte
+                Height: =48
+                Size: =21 + varLetra
+                Text: ="Nota Fiscal PDF"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue18 As attachments:
+                BorderColor: =Color.Black
+                DisplayMode: =Parent.DisplayMode
+                Height: =183
+                HoverFill: =varCorHover
+                IsInDataCard: =true
+                ItemFill: =varCor
+                ItemHoverFill: =varCorHover
+                Items: =Parent.Default
+                MaxAttachments: =1
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedFill: |-
+                    =Switch(
+                        varCor,
+                        Color.Yellow,
+                        ColorFade(
+                            ColorValue("#3b89bd"),
+                            50%
+                        ),
+                        Color.Black,
+                        ColorFade(
+                            Color.Black,
+                            90%
+                        ),
+                        Color.White,
+                        ColorFade(
+                            ColorValue("#f8e458"),
+                            50%
+                        ),
+                        ColorFade(
+                            Color.Black,
+                            90%
+                        )
+                    )
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                ZIndex: =2
+
+            ErrorMessage35 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue18.Y + DataCardValue18.Height
+                ZIndex: =3
+
+            StarVisible35 As label:
+                Align: =Align.Center
+                Height: =DataCardKey14.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey14.Y
+                ZIndex: =4
+
         Anexo_DataCard1 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Anexo"
             Default: =varProduto.Foto.Full
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"Anexo")
+            DisplayName: ="Foto"
             Fill: =RGBA(0, 0, 0, 0)
             Height: =376
             Required: =false

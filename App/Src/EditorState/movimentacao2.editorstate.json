@@ -327,8 +327,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,\"Anexo\")",
           "InvariantPropertyName": "DisplayName",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -540,7 +540,7 @@
       "MetaDataIDKey": "",
       "Name": "Anexos_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -26297,7 +26297,7 @@
       "MetaDataIDKey": "",
       "Name": "Fabricante_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -28814,7 +28814,7 @@
       "MetaDataIDKey": "",
       "Name": "MABEC_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29472,7 +29472,7 @@
       "MetaDataIDKey": "",
       "Name": "Modelo Material_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -29897,7 +29897,7 @@
       "MetaDataIDKey": "",
       "Name": "Nome (field_2)_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -30219,7 +30219,7 @@
       "MetaDataIDKey": "",
       "Name": "Nota Fiscal_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -30984,7 +30984,7 @@
       "MetaDataIDKey": "",
       "Name": "Quant._DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -31288,7 +31288,7 @@
       "MetaDataIDKey": "",
       "Name": "Referência_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
