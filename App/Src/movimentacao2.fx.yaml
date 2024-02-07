@@ -1482,7 +1482,7 @@ movimentacao2 As screen:
                 Height: =183
                 HoverFill: =varCorHover
                 IsInDataCard: =true
-                Items: =varProduto.Anexos
+                Items: =Parent.Default
                 MaxAttachments: =1
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1831,11 +1831,11 @@ movimentacao2 As screen:
         Anexo_DataCard1 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Anexo"
-            Default: =varProduto.Anexo.Full
+            Default: =varProduto.Foto.Full
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"Anexo")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =376
             Required: =false
             Update: =Image3.Image
             Width: =640
@@ -1854,7 +1854,7 @@ movimentacao2 As screen:
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =6
                 ZIndex: =1
 
             Image3 As image:

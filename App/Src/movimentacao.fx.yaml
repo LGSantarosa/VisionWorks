@@ -31,7 +31,7 @@ movimentacao As screen:
         "'Imagem do material' As image":
             AccessibleLabel: ="Imagem referente ao material. Caso clique no nome do material será apresentado a sua imagem"
             Height: =1136
-            Image: =varImagemProduto.Anexo.Full
+            Image: =varImagemProduto.Foto.Full
             OnSelect: =Set(varImagem,false)
             TabIndex: =0
             Visible: =varImagem
@@ -101,7 +101,7 @@ movimentacao As screen:
                     varImagemProduto,
                     Gallery2.Selected
                 ) && If(
-                    IsBlank(varImagemProduto.Anexo),
+                    IsBlank(varImagemProduto.Foto),
                     Notify(
                         "Imagem não encontrada",
                         NotificationType.Error

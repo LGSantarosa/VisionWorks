@@ -12179,8 +12179,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Parent.Default",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Items",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
