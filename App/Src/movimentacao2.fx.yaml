@@ -1450,7 +1450,7 @@ movimentacao2 As screen:
         Anexos_DataCard1 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
-            Default: =ThisItem.Anexos
+            Default: =varProduto.Anexos
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ESTOQUEPROJETOS],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
@@ -1478,7 +1478,7 @@ movimentacao2 As screen:
             DataCardValue18 As attachments:
                 BorderColor: =Color.Black
                 DisplayMode: =Parent.DisplayMode
-                Height: =240
+                Height: =183
                 HoverFill: =varCorHover
                 IsInDataCard: =true
                 Items: =Parent.Default
