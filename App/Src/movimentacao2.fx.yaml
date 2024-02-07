@@ -999,7 +999,7 @@ movimentacao2 As screen:
             Update: =DataCardValue17.Selected
             Width: =640
             X: =0
-            Y: =2
+            Y: =3
             ZIndex: =1
 
             DataCardKey19 As label:
@@ -1160,7 +1160,7 @@ movimentacao2 As screen:
             Update: =DataCardValue6.Selected
             Width: =640
             X: =0
-            Y: =3
+            Y: =5
             ZIndex: =1
 
             DataCardKey7 As label:
@@ -1306,7 +1306,7 @@ movimentacao2 As screen:
             Update: =DataCardValue1.Text
             Width: =640
             X: =0
-            Y: =6
+            Y: =9
             ZIndex: =1
 
             DataCardKey1 As label:
@@ -1393,7 +1393,7 @@ movimentacao2 As screen:
             Update: =Image3.Image
             Width: =640
             X: =0
-            Y: =7
+            Y: =11
             ZIndex: =1
 
             DataCardKey4 As label:
@@ -1483,7 +1483,7 @@ movimentacao2 As screen:
                 )
             Width: =640
             X: =0
-            Y: =8
+            Y: =4
             ZIndex: =1
 
             DataCardKey18 As label:
@@ -1587,7 +1587,7 @@ movimentacao2 As screen:
             Update: =DataCardValue2.SelectedDate
             Width: =640
             X: =0
-            Y: =9
+            Y: =2
             ZIndex: =1
 
             DataCardKey2 As label:
@@ -1867,7 +1867,7 @@ movimentacao2 As screen:
             Update: =DataCardValue14.Text
             Width: =640
             X: =0
-            Y: =4
+            Y: =10
             ZIndex: =9
 
             DataCardKey16 As label:
@@ -1966,7 +1966,7 @@ movimentacao2 As screen:
             Update: =DataCardValue15.Text
             Width: =640
             X: =0
-            Y: =5
+            Y: =8
             ZIndex: =9
 
             DataCardKey17 As label:
@@ -2060,7 +2060,7 @@ movimentacao2 As screen:
             Update: =DataCardValue10.Text
             Width: =640
             X: =0
-            Y: =10
+            Y: =7
             ZIndex: =9
 
             DataCardKey12 As label:
@@ -2162,7 +2162,7 @@ movimentacao2 As screen:
             Update: =DataCardValue13.Text
             Width: =640
             X: =0
-            Y: =11
+            Y: =6
             ZIndex: =9
 
             DataCardKey15 As label:
