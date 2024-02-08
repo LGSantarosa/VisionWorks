@@ -317,12 +317,12 @@ localizar As screen:
             Height: |-
                 =If(
                     varLetra > 20,
-                    640,
-                    610
+                    830,
+                    800
                 )
             Visible: =varFiltro
-            Width: =270 + Radio1.Size
-            X: =370 - Radio1.Size
+            Width: =368
+            X: =272
             Y: =210
             ZIndex: =14
 
@@ -332,21 +332,33 @@ localizar As screen:
                 BorderStyle: =BorderStyle.None
                 Color: =Color.Black
                 Font: =varFonte
-                Height: |-
-                    =If(
-                        varLetra > 20,
-                        560,
-                        530
-                    )
+                Height: =If(varLetra > 20, 390 ,360)
                 HoverColor: =ColorFade(Self.Color,30%)
                 Items: =Choices(CONTROLEDEMATERIAIS.Localização)
                 OnSelect: =Reset(Gallery2_1)
                 RadioBorderColor: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
                 RadioSelectionFill: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
                 Size: =If(varLetra > 20, 12 + varLetra, 15 + varLetra)
-                Width: =300 + Self.Size
+                Width: =368
                 Y: =80
                 ZIndex: =2
+
+            Radio1_3 As radio:
+                AccessibleLabel: ="Filtro de localização, caso escolha uma localização, aparecerá apenas materiais referentes a ela"
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderStyle: =BorderStyle.None
+                Color: =Color.Black
+                Font: =varFonte
+                Height: =If(varLetra > 20, 390 ,360)
+                HoverColor: =ColorFade(Self.Color,30%)
+                Items: =Choices(CONTROLEDEMATERIAIS.Projeto0)
+                OnSelect: =Reset(Gallery2_1)
+                RadioBorderColor: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
+                RadioSelectionFill: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
+                Size: =If(varLetra > 20, 12 + varLetra, 15 + varLetra)
+                Width: =368
+                Y: =440
+                ZIndex: =3
 
         Icon3_1 As icon.FilterFlat:
             AccessibleLabel: ="Caso pressionado, fechará o filtro"
@@ -371,7 +383,7 @@ localizar As screen:
             OnSelect: =Reset(Radio1) & Reset(Gallery2_1)
             TabIndex: =0
             Visible: =If(varFiltro = true, true, false)
-            X: =If(varLetra > 20, 350,365)
+            X: =280
             Y: =220
             ZIndex: =16
 
