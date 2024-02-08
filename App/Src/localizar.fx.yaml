@@ -380,7 +380,7 @@ localizar As screen:
                 =Switch(varCor,Color.Yellow,ColorValue("#fdee2f"),Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
             ContentLanguage: ="Barra de pesquisa referente aos materiais"
             Icon: =Icon.Reset
-            OnSelect: =Reset(Radio1) & Reset(Gallery2_1)
+            OnSelect: =Reset(Radio1) & Reset(Gallery2_1) & Reset(Radio1_3)
             TabIndex: =0
             Visible: =If(varFiltro = true, true, false)
             X: =280
