@@ -356,7 +356,7 @@ movimentacao As screen:
                 RadioBorderColor: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
                 RadioSelectionFill: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
                 Size: =If(varLetra > 20, 12 + varLetra, 15 + varLetra)
-                Width: =366
+                Width: =368
                 Y: =80
                 ZIndex: =2
 
@@ -373,7 +373,7 @@ movimentacao As screen:
                 RadioBorderColor: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
                 RadioSelectionFill: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
                 Size: =If(varLetra > 20, 12 + varLetra, 15 + varLetra)
-                Width: =366
+                Width: =368
                 Y: =440
                 ZIndex: =3
 
