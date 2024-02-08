@@ -479,7 +479,7 @@ movimentacao As screen:
                 =Navigate(
                     principal,
                     ScreenTransition.UnCoverRight
-                ) & Reset(TextSearchBox1_1) & Refresh(ESTOQUEPROJETOS) & Reset(Radio1_1) & UpdateContext({varFiltro: false}) & Set(
+                ) & Reset(TextSearchBox1_1) & Refresh(ESTOQUEPROJETOS) & Reset(Radio1_1) & Reset(Radio1_2) & UpdateContext({varFiltro: false}) & Set(
                     varCorLetra,
                     Color.Black
                 )
