@@ -75,7 +75,7 @@ localizar As screen:
                         'Nota Fiscal',
                         TextSearchBox1_2.Text
                     ),
-                    (Localização.Value = Radio1.Selected.Value Or Radio1.Selected.Value = Blank())
+                    (Localização.Value = Radio1.Selected.Value Or Radio1.Selected.Value = Blank()) && (Projeto0.Value = Radio1_3.Selected.Value Or Radio1_3.Selected.Value = Blank())
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
