@@ -405,7 +405,7 @@ localizar As screen:
                 =Navigate(
                     principal,
                     ScreenTransition.UnCoverRight
-                ) & Reset(TextSearchBox1_2) & Refresh(CONTROLEDEMATERIAIS) & Reset(Radio1) & UpdateContext({varFiltro: false}) & Set(
+                ) & Reset(TextSearchBox1_2) & Refresh(CONTROLEDEMATERIAIS) & Reset(Radio1) & Reset(Radio1_3) & UpdateContext({varFiltro: false}) & Set(
                     varCorLetra,
                     Color.Black
                 ) & Reset(TextSearchBox1_2)
