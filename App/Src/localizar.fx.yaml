@@ -75,7 +75,7 @@ localizar As screen:
                         'Nota Fiscal',
                         TextSearchBox1_2.Text
                     ),
-                    (Localização.Value = Radio1.Selected.Value Or Radio1.Selected.Value = Blank()) && (Projeto0.Value = Radio1_3.Selected.Value Or Radio1_3.Selected.Value = Blank())
+                    (Localização.Value = Radio1.Selected.Value Or Radio1.Selected.Value = Blank()) && ('Projeto (Projeto0)'.Value = Radio1_3.Selected.Value Or Radio1_3.Selected.Value = Blank())
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
@@ -351,7 +351,7 @@ localizar As screen:
                 Font: =varFonte
                 Height: =If(varLetra > 20, 390 ,360)
                 HoverColor: =ColorFade(Self.Color,30%)
-                Items: =Choices(CONTROLEDEMATERIAIS.Projeto0)
+                Items: =Choices(CONTROLEDEMATERIAIS.'Projeto (Projeto0)')
                 OnSelect: =Reset(Gallery2_1)
                 RadioBorderColor: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)
                 RadioSelectionFill: =Switch(varCor,Color.Yellow,varCorBTT,Color.Black,Color.Black,Color.White,Color.Black,Color.Black)

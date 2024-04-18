@@ -237,10 +237,10 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =DisplayMode.Disabled
                 Height: =70
-                Items: =Choices([@ESTOQUEPROJETOS].Projeto0)
+                Items: =Choices([@ESTOQUEPROJETOS].'Projeto (Projeto0)')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(ESTOQUEPROJETOS.Projeto0,DataCardValue19.SearchText)
+                SearchItems: =Choices(ESTOQUEPROJETOS.'Projeto (Projeto0)',DataCardValue19.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
